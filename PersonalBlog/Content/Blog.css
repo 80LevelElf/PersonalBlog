@@ -1,0 +1,71 @@
+﻿@font-face {
+    font-family: blogFont;
+    src: url(fonts/Arsenal-Regular.otf);
+}
+
+body {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    margin-left: 15%;
+    margin-right: 15%;
+
+    font-family: blogFont;
+}
+
+header {
+    display: block;
+    background: rgba(255, 255, 255, 0.80);
+    padding-left: 7px;
+    margin-top: 14px;
+
+    font-size: 20px;
+}
+
+header label.nick {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+
+    padding-left: 6px;
+    padding-right: 6px;
+
+    margin-right: 5px;
+}
+
+header a {
+    display: inline-block;
+    padding: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+header a:hover, header a:focus {
+    background: rgba(70, 130, 180, 0.85);
+    cursor: pointer;
+    color: white;
+}
+
+footer {
+    display: block;
+    background: rgba(255, 255, 255, 0.80);
+    width: 70%;
+    font-size: 16px;
+    position: absolute;
+    z-index: 10;
+    bottom: 0px;
+    padding: 4px;
+}
+
+div.content-div {
+    min-height: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: 10px;
+    display: block;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}

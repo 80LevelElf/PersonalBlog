@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    int startYear = 2016;
+    int currentYear = DateTime.Now.Year;
+
+    var footerText = (startYear == currentYear) ?
+        startYear.ToString() :
+        string.Format("{0} - {1}", startYear, currentYear);
+}
+
+@Styles.Render("~/Content/css/blog")
+
+<header>
+    <label class="nick">80LevelElf  about  IT</label>
+    <a>Записи</a>
+    <a>Мои проекты</a>
+    <a>Обо мне</a>
+</header>
+
+<div class="content-div">
+    @RenderBody()
+</div>
+
+<footer>
+    <label>© Салахутдинов Рустам, @footerText</label>
+</footer>
