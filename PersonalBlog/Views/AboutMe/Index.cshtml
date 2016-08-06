@@ -1,0 +1,173 @@
+﻿@{
+    ViewBag.Title = "Обо мне";
+    Layout = "~/Views/Shared/_BlogLayout.cshtml";
+}
+
+<h2>> ФИО: Салахутдинов Рустам Русланович</h2>
+<h2>> Возраст: @ViewBag.AgeInYears</h2>
+<h2>> Образование: незаконченное высшее (СГТУ, Информационная безопасность автоматизированных систем)</h2>
+<h2>> Обо мне в кратце:
+    <a class="link-button resume">резюме(English)</a>,
+    <a class="link-button github">GitHub</a>,
+    <a class="link-button linkedin">LinkedIn</a>.
+</h2>
+
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-skills">Что я умею</a></li>
+        <li><a href="#tabs-work">Где я работал</a></li>
+        <li><a href="#tabs-more">Еще немного обо мне</a></li>
+    </ul>
+
+    <!--Skills-->
+    <div id="tabs-skills">
+        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+    </div>
+
+    <!--History of work-->
+    <div id="tabs-work">
+        <p>
+            <div class="company-logo-div">
+                <a class="work-epam"></a>
+            </div>
+            <div class="company-work-description">
+                <b>.Net Backend Developer in Epam Systems (с марта по июнь 2016 г.)</b>
+                <p>
+                    <b>Чем занимался: </b>
+                    <label>
+                        Являлся разработчиком ядра для огромного решения для страховых компаний (например ВТБ, ВСК).
+                        Заказчик - крупная словенская IT-корпорация. Был инкорпорирован в команду заказчика
+                        (то есть непосредственный босс - словенский разработчик). Все коммуникации только на английском.
+                    </label>
+                </p>
+                <p>
+                    <b>Упор на технологии: </b>
+                    <table>
+                        <tr>
+                            <td>Core C#</td>
+                            <td><progress max="100" value="100"></progress></td>
+                        </tr>
+                        <tr>
+                            <td>Мультипоточное программирование</td>
+                            <td><progress max="100" value="45"></progress></td>
+                        </tr>
+                        <tr>
+                            <td>WinForms</td>
+                            <td><progress max="100" value="50"></progress></td>
+                        </tr>
+                        <tr>
+                            <td>WPF</td>
+                            <td><progress max="100" value="20"></progress></td>
+                        </tr>
+                        <tr>
+                            <td>WCF (SOAP)</td>
+                            <td><progress max="100" value="35"></progress></td>
+                        </tr>
+                        <tr>
+                            <td>Web API</td>
+                            <td><progress max="100" value="45"></progress></td>
+                        </tr>
+                        <tr>
+                            <td>T-SQL</td>
+                            <td><progress max="100" value="80"></progress></td>
+                        </tr>
+                        <tr>
+                            <td>DevArt</td>
+                            <td><progress max="100" value="20"></progress></td>
+                        </tr>
+                        <tr>
+                            <td>NPoco</td>
+                            <td><progress max="100" value="20"></progress></td>
+                        </tr>
+                    </table>
+                </p>
+            </div>
+        </p>
+    </div>
+
+    <!--More about me-->
+    <div id="tabs-more">
+        <p>
+            Если разделить мои ранние годы по классификации Л.Н.Толстого <i>"Детство-отрочество-юность"</i>, то программированием я начал
+            увлекаться где-то с "отрочества". Наличие желания и отсутствие умения компенсировалось <a href="https://ru.wikipedia.org/wiki/HiAsm">одной программой</a>,
+            которая позволяла в формате конструктора "лепить" свои проекты. И так на велосипеде и энтузиазме было слеплено множество
+            ужасных программ, величина которых упиралась в формат конструктора, в котором они создавались:
+        </p>
+        <ul class="link-list">
+            <li><a href="http://www.softportal.com/software-17002-rizek-tsentr.html">Программа-аналог AIDA 64</a></li>
+            <li><a href="http://www.softportal.com/software-17382-rizek-pasgen.html">Генератор паролей</a></li>
+            <li><a href="http://www.softportal.com/software-17517-rizek-shifrator.html">Программа-шифровальщик</a></li>
+            <li><a href="http://www.softportal.com/software-19007-rizek-kalkulyator.html">Калькулятор</a>(О да, я написал свой калькулятор!)</li>
+        </ul>
+        <p>
+            Потом был школьный Pascal, мне стукнуло где-то 15-16 лет и я решил, что уже взрослый, а врослые высвобождают память самостоятельно.
+            Так я изучил <label class="blacked">C++</label>, потом в придачу разобрался в framework'e
+            <label class="blacked">Qt</label>. На этой связке за два школьных года написал несколько детских проектов,
+            которые до сих пор можно найти в интернете:
+            <ul class="link-list">
+                <li>
+                    <a href="https://www.linux-apps.com/p/1131400">Редактор для QSS</a> - 
+                    <label class="blacked">C++</label>, <label class="blacked">Qt</label>.
+                </li>
+                <li>
+                    <a href="https://www.linux-apps.com/p/1131106/">Программа для подбора цветов</a> -
+                    <label class="blacked">C++</label>, <label class="blacked">Qt</label>.
+                </li>
+            </ul>
+        </p>
+        <p>
+            Код этих программ я, увы, уже не найду. Но вспоминая этот код, оно и к лучшему =)
+        </p>
+        <p>
+            Далее было поступление в университет, где преподавали <label class="blacked">C#</label>, что предопределило
+            мою основную специализацию в данный момент. С течением времени все больше технологий нанизывалось на .Net-стек моих
+            знаний благодаря <a href="#tabs-work">работе</a> и собственным изысканиям. За это время было множество больших и маленьких проектов,
+            законченных и навсегда заброшенных на свалке GitHub'a:
+            <ul class="link-list">
+                <li>
+                    <a href="https://github.com/80LevelElf/ZaBugrom">Сайт-агрегатор блогов эммигрантов</a> (проект заброшен) -
+                    <label class="blacked">C#</label>, <label class="blacked">Asp.Net MVC</label>, <label class="blacked">JavaScript</label>,
+                    <label class="blacked">JQuery</label>, <label class="blacked">T-SQL</label>, <label class="blacked">LINQ TO DB</label>.
+                </li>
+                <li>
+                    <a href="https://github.com/80LevelElf/Mather">Математический сайт</a>(формально закончен, реально заброшен) -
+                    <label class="blacked">C#</label>, <label class="blacked">Asp.Net MVC</label>, <label class="blacked">JavaScript</label>,
+                    <label class="blacked">JQuery</label>, <label class="blacked">Math.js</label>.
+                </li>
+                <li>
+                    <a href="https://github.com/80LevelElf/Bigio">Библиотека огромных коллекций для .Net</a>(основной home-project) -
+                    <label class="blacked">C#</label>
+                </li>
+            </ul>
+        </p>
+        <p>
+            Несмотря на то, что я привел пример целых двух сайтов, frontend не является моей специализацией или даже увлечением. Но, наверно,
+            вы уже и так об этом догадались когда у вас в 5-ый раз поехала вертска в моем блоге.
+            Помимо домашних проектов, было очень много экспериментов, маленьких проектов для "посмотреть как будет работать", множество прочитанных
+            статей и просмотренных вебинаров.
+        </p>
+        <p>
+            В последнее время активно исследую области, которые мне кажутся перспективными и куда можно развиваться дальше.
+            В целом эти области можно очертить так: <label class="blacked">машинное обучение</label>, <label class="blacked">Java</label>,
+            <label class="blacked">Android</label>. Из последних проектов:
+            <ul class="link-list">
+                <li>
+                    <a href="https://github.com/80LevelElf/NewochemApp">Мобильный клиент для сообщества переводчиков в ВКонтакте</a> (в разработке) -
+                    <label class="blacked">Java</label>, <label class="blacked">Android</label>, <label class="blacked">Vk SDK</label>.
+                </li>
+                <li>
+                    <a href="https://github.com/80LevelElf/PersonalBlog">Блог, который вы читаете</a> (в разработке) -
+                    <label class="blacked">C#</label>, <label class="blacked">Asp.Net MVC</label>, <label class="blacked">JavaScript</label>,
+                    <label class="blacked">JQuery</label>, <label class="blacked">T-SQL</label>, <label class="blacked">LINQ TO DB</label>.
+                </li>
+            </ul>
+        </p>
+    </div>
+
+</div>
+
+<script>
+    $(function () {
+        $("#tabs").tabs();
+    });
+</script>

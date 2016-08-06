@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
 </head>
 <body>
-    @RenderBody()
-
     @Scripts.Render("~/bundles/jquery")
-    @RenderSection("scripts", required: false)
+
+    @RenderBody()
 </body>
 </html>

@@ -1,27 +1,21 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
-
-    int startYear = 2016;
-    int currentYear = DateTime.Now.Year;
-
-    var footerText = (startYear == currentYear) ?
-        startYear.ToString() :
-        string.Format("{0} - {1}", startYear, currentYear);
 }
 
+@Scripts.Render("~/bundles/jqueryui")
 @Styles.Render("~/Content/css/blog")
+@Styles.Render("~/Content/themes/base/css")
+
+<!--We can just add link and use emoji without downloading all images and .css file-->
+<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
 <header>
     <label class="nick">80LevelElf  about  IT</label>
     <a>Записи</a>
     <a>Мои проекты</a>
-    <a>Обо мне</a>
+    <a href="@Url.Action("Index", "AboutMe")">Обо мне</a>
 </header>
 
 <div class="content-div">
     @RenderBody()
 </div>
-
-<footer>
-    <label>© Салахутдинов Рустам, @footerText</label>
-</footer>

@@ -3,6 +3,9 @@
     src: url(fonts/Arsenal-Regular.otf);
 }
 
+/*
+    Common elements
+    */
 body {
     background-image: url("images/background.jpg");
     background-repeat: no-repeat;
@@ -11,8 +14,22 @@ body {
 
     margin-left: 15%;
     margin-right: 15%;
-
+    
     font-family: blogFont;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+a:hover {
+    color: blue;
+    border-color: blue;
 }
 
 header {
@@ -24,21 +41,13 @@ header {
     font-size: 20px;
 }
 
-header label.nick {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-
-    padding-left: 6px;
-    padding-right: 6px;
-
-    margin-right: 5px;
-}
-
 header a {
     display: inline-block;
     padding: 5px;
     padding-top: 8px;
     padding-bottom: 8px;
+    color: black;
+    border-bottom: 0;
 }
 
 header a:hover, header a:focus {
@@ -47,25 +56,149 @@ header a:hover, header a:focus {
     color: white;
 }
 
-footer {
-    display: block;
-    background: rgba(255, 255, 255, 0.80);
-    width: 70%;
+table {
     font-size: 16px;
-    position: absolute;
-    z-index: 10;
-    bottom: 0px;
-    padding: 4px;
+}
+
+progress {
+    height: 12px;
+}
+
+tr {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(235, 235, 235, 0.4);
+}
+
+td {
+    padding: 5px;
+}
+
+/*
+    Special elements
+    */
+
+header label.nick {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 div.content-div {
     min-height: 50%;
-    background: rgba(255, 255, 255, 0.9);
-    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.95);
+    margin-top: 20px;
     display: block;
 
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 6px;
     padding-bottom: 6px;
+}
+
+label.blacked {
+    background-color: #eeeeee;
+    padding: 2px;
+    border: 1px solid #dddddd;
+}
+
+p, label, ul {
+    font-size: 18px;
+}
+
+ul.link-list {
+    list-style-type: lower-alpha;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+/*
+    Page specific
+    */
+
+a.link-button {
+    padding: 4px;
+    padding-left: 32px;
+    padding-right: 6px;
+    height: 28px;
+    display: inline-block;
+
+    font-size: 20px;
+    font-weight: normal;
+    background-position-y: 2px;
+    background-repeat: no-repeat;
+}
+
+a.link-button.resume {
+    background-image: url("images/Resume-32.png");
+}
+
+a.link-button.github {
+    background-image: url("images/GitHub-32.png");
+}
+
+a.link-button.linkedin {
+    background-image: url("images/LinkedIn-32.png");
+}
+
+div.company-logo-div {
+    display: inline-block;
+    text-align:center;
+    border-right: 1px solid #999999;
+    padding: 10px;
+    width: 150px;
+}
+
+div.company-logo-div a {
+    border: 0;
+    display: block;
+    height: 48px;
+    width: 128px;
+    margin: auto;
+    border: 1px solid #999999;
+}
+
+div.company-logo-div a.work-epam {
+    background-image: url(images/EPAM_logo.png);
+}
+
+div.company-work-description {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    max-width: 65%;
+    font-size: 18px;
+}
+
+div.company-work-description table td{
+    padding-right: 15px;
+}
+
+div.company-work-description table progress {
+    vertical-align: baseline;
+}
+
+/*
+    Fixing 3rd-party libs
+    */
+
+div.ui-tabs.ui-widget-content {
+    border: 0 !important;
+    background: transparent !important;
+}
+
+div.ui-tabs-panel {
+    padding: 5px !important;
+}
+
+.ui-widget-content a {
+    color: black;
+}
+
+.ui-widget-content a:hover {
+    color: blue;
 }
