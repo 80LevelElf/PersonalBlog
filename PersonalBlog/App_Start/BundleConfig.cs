@@ -24,10 +24,10 @@ namespace PersonalBlog
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
             bundles.Add(new StyleBundle("~/Content/css/blog").Include("~/Content/Blog.css"));
 
-            bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(                        
+            bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
+                        "~/Content/themes/base/jquery.ui.theme.css",       
                         "~/Content/themes/base/jquery-ui.css",
-                        "~/Content/themes/base/jquery-ui.structure.css",
-                        "~/Content/themes/base/jquery.ui.theme.css"));
+                        "~/Content/themes/base/jquery-ui.structure.css"));
         }
     }
 }

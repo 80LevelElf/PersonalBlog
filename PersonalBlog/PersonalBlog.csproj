@@ -143,10 +143,13 @@
   <ItemGroup>
     <Content Include="Content\Blog.css" />
     <Content Include="Content\images\background.jpg" />
-    <Content Include="Content\images\EPAM_logo.png" />
+    <Content Include="Content\images\EPAM-logo.png" />
     <Content Include="Content\images\GitHub-32.png" />
     <Content Include="Content\images\LinkedIn-32.png" />
     <Content Include="Content\images\Resume-32.png" />
+    <Content Include="Content\images\roko-logo.png" />
+    <Content Include="Content\images\taxi-logo.png" />
+    <Content Include="Content\images\volgasoft-logo.png" />
     <Content Include="Content\themes\base\images\ui-icons_444444_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_555555_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_777620_256x240.png" />
@@ -190,7 +193,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\_BlogLayout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\AboutMe\More.cshtml" />
     <Content Include="Views\AboutMe\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>

@@ -3,7 +3,7 @@
     src: url(fonts/Arsenal-Regular.otf);
 }
 
-/*
+/*----------------------------------------------
     Common elements
     */
 body {
@@ -12,10 +12,10 @@ body {
     background-size: cover;
     background-attachment: fixed;
 
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 12%;
+    margin-right: 12%;
     
-    font-family: blogFont;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
 }
 
 a {
@@ -39,6 +39,8 @@ header {
     margin-top: 14px;
 
     font-size: 20px;
+
+    font-family: blogFont;
 }
 
 header a {
@@ -58,6 +60,7 @@ header a:hover, header a:focus {
 
 table {
     font-size: 16px;
+    border-collapse: collapse;
 }
 
 progress {
@@ -76,7 +79,7 @@ td {
     padding: 5px;
 }
 
-/*
+/*----------------------------------------------
     Special elements
     */
 
@@ -94,15 +97,14 @@ div.content-div {
     margin-top: 20px;
     display: block;
 
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 6px;
     padding-bottom: 6px;
 }
 
 label.blacked {
     background-color: #eeeeee;
-    padding: 2px;
     border: 1px solid #dddddd;
 }
 
@@ -116,10 +118,11 @@ ul.link-list {
     margin-bottom: 3px;
 }
 
-/*
+/*----------------------------------------------
     Page specific
     */
 
+/*About me*/
 a.link-button {
     padding: 4px;
     padding-left: 32px;
@@ -156,14 +159,29 @@ div.company-logo-div {
 div.company-logo-div a {
     border: 0;
     display: block;
-    height: 48px;
     width: 128px;
+    height: 48px;
     margin: auto;
     border: 1px solid #999999;
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 0;
 }
 
 div.company-logo-div a.work-epam {
-    background-image: url(images/EPAM_logo.png);
+    background-image: url(images/EPAM-logo.png);
+}
+
+div.company-logo-div a.work-roko {
+    background-image: url(images/roko-logo.png);
+}
+
+div.company-logo-div a.work-taxi {
+    background-image: url(images/taxi-logo.png);
+}
+
+div.company-logo-div a.work-volgasoft {
+    background-image: url(images/volgasoft-logo.png);
 }
 
 div.company-work-description {
@@ -182,7 +200,55 @@ div.company-work-description table progress {
     vertical-align: baseline;
 }
 
-/*
+div.skills-group {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    border: 1px solid #ededed;
+    margin-top: 15px;
+    min-width: 45%;
+}
+
+div.skills-group table {
+    width: 100%;
+}
+
+div.skills-group label {
+    display: block;
+    text-align: center;
+}
+
+div.skills-group label.backend-net {
+    background-color: #7b68ee;
+    color: white;
+}
+
+div.skills-group label.fronend-net {
+    background-color: #9932cc;
+    color: white;
+}
+
+div.skills-group label.data-bases {
+    background-color: #ff4500;
+    color: white;
+}
+
+div.skills-group label.cpp {
+    background-color: #008080;
+    color: white;
+}
+
+div.skills-group label.java {
+    background-color: #483d8b;
+    color: white;
+}
+
+div.skills-group label.other {
+    background-color: #ffa500;
+    color: white;
+}
+
+/*----------------------------------------------
     Fixing 3rd-party libs
     */
 
