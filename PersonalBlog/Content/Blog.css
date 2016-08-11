@@ -33,7 +33,7 @@ a:hover {
 }
 
 header {
-    display: block;
+    display: flex;
     background: rgba(255, 255, 255, 0.80);
     padding-left: 7px;
     margin-top: 14px;
@@ -45,14 +45,14 @@ header {
 
 header a {
     display: inline-block;
-    padding: 5px;
+    padding: 6px;
     padding-top: 8px;
     padding-bottom: 8px;
     color: black;
     border-bottom: 0;
 }
 
-header a:hover, header a:focus {
+header a:hover, header a:focus, header a.selected {
     background: rgba(70, 130, 180, 0.85);
     cursor: pointer;
     color: white;
@@ -79,16 +79,24 @@ td {
     padding: 5px;
 }
 
+
+p, label, ul {
+    font-size: 18px;
+}
+
 /*----------------------------------------------
     Special elements
     */
 
-header label.nick {
+header a.nick {
     background: rgba(0, 0, 0, 0.8);
     color: white;
 
-    padding-left: 6px;
-    padding-right: 6px;
+    padding: 6px;
+    margin: 6px;
+    margin-left: 0;
+
+    font-size: 18px;
 }
 
 div.content-div {
@@ -106,10 +114,6 @@ div.content-div {
 label.blacked {
     background-color: #eeeeee;
     border: 1px solid #dddddd;
-}
-
-p, label, ul {
-    font-size: 18px;
 }
 
 ul.link-list {
