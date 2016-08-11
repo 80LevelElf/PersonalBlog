@@ -135,6 +135,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AboutMeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MyProjectsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -143,6 +144,7 @@
   <ItemGroup>
     <Content Include="Content\Blog.css" />
     <Content Include="Content\images\background.jpg" />
+    <Content Include="Content\images\bigio-logo.png" />
     <Content Include="Content\images\EPAM-logo.png" />
     <Content Include="Content\images\GitHub-32.png" />
     <Content Include="Content\images\LinkedIn-32.png" />
@@ -194,6 +196,7 @@
     <Content Include="Views\Shared\_BlogLayout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\AboutMe\Index.cshtml" />
+    <Content Include="Views\MyProjects\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

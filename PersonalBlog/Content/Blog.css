@@ -46,8 +46,7 @@ header {
 header a {
     display: inline-block;
     padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 10px;
     color: black;
     border-bottom: 0;
 }
@@ -120,6 +119,13 @@ ul.link-list {
     list-style-type: lower-alpha;
     margin-top: 3px;
     margin-bottom: 3px;
+}
+
+label.separator {
+    display: block;
+    font-size: 22px;
+    border-bottom: 1px solid #aaaaaa;
+    padding-bottom: 3px;
 }
 
 /*----------------------------------------------
@@ -250,6 +256,15 @@ div.skills-group label.java {
 div.skills-group label.other {
     background-color: #ffa500;
     color: white;
+}
+
+/*My projects*/
+div.my_project_div {
+    display: block;
+
+    margin: 15px;
+    margin-left: 0;
+    padding: 5px;
 }
 
 /*----------------------------------------------

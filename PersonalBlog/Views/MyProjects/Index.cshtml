@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_BlogLayout.cshtml";
+}
+
+<p>
+    Ниже представлены те мои домашние проекты, которые заслуживают хоть какого-то внимания и могут быть
+    вам интересны. Все проекты имеют открытый исходный код.
+</p>
+
+<label class="separator">Библиотеки</label>
+
+<div class="my_project_div">
+    <img src="~/Content/images/bigio-logo.png"/>
+    <label>Библиотека коллекций для работы</label>
+    <label>с миллионами и миллиардами элементов</label>
+</div>
+
+<script>
+    $(function () {
+        $("#my-projects_ref").addClass("selected");
+    });
+</script>
