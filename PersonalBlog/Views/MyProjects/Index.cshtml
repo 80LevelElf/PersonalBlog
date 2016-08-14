@@ -1,11 +1,13 @@
 ﻿@{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Мои проекты";
     Layout = "~/Views/Shared/_BlogLayout.cshtml";
 }
 
 <p>
     Ниже представлены те мои домашние проекты, которые заслуживают хоть какого-то внимания и могут быть
     вам интересны. Все проекты имеют открытый исходный код.
+    В данный список не включены многие <a href="@Url.Action("Index", "AboutMe")">ранние проекты</a>
+    (вкладка "Еще немного обо мне").
 </p>
 
 <label class="separator">Библиотеки</label>
@@ -31,7 +33,57 @@
             <b>Документация:</b> <a href="https://github.com/80LevelElf/Bigio/wiki">Wiki</a>
         </div>
         <div class="project_info_row tech">
-            <b>Технологии:</b> <label class="blacked">C#</label>
+            <b>Технологии:</b> <label class="blacked">C#</label>.
+        </div>
+    </p>
+</div>
+
+<label class="separator">Мобильные приложения(Android)</label>
+
+<div class="my_project_div">
+    <img src="~/Content/images/newochem-logo.png"/>
+    <label>
+        Newочем App - это мобильный клиент на Android для некоммерческого
+        <a href="https://vk.com/newochem">сообщества переводчиков</a>, позволяющий читать переводы без привязки к
+        ВКонтакте и добавляющий дополнительные возможности.
+    </label>
+    <p>
+        <div class="project_info_row license">
+            <b>Лицензия:</b> <a href="https://github.com/80LevelElf/NewochemApp/blob/master/LICENSE">указана в исходном коде</a>
+            <label> (MIT)</label>
+        </div>
+        <div class="project_info_row source-link">
+            <b>Исходный код:</b> <a href="https://github.com/80LevelElf/NewochemApp">GitHub</a>
+        </div>
+        <div class="project_info_row tech">
+            <b>Технологии:</b>
+            <label class="blacked">Java</label>, <label class="blacked">Android</label>, <label class="blacked">VK SDK</label>.
+        </div>
+    </p>
+</div>
+
+<label class="separator">Сайты</label>
+<div class="my_project_div">
+    <b>Мой блог</b>
+    <label>
+        - это ... мой блог. Можно было бы взять какой-нибудь Wordpress и не думать не о чем. Но
+        во-первых - с Wordpress'ом все равно пришлось бы возиться, чтобы довести его до состояния,
+        которое мне нужно. А во-вторых коли я все равно буду платить за хостинг и доменное имя, то
+        скорее все буду использовать этот сайт так же для нужн всех моих проектов.
+    </label>
+    <p>
+        <div class="project_info_row license">
+            <b>Лицензия:</b> <a href="https://github.com/80LevelElf/PersonalBlog/blob/master/LICENSE">указана в исходном коде</a>
+            <label> (GPL)</label>
+        </div>
+        <div class="project_info_row source-link">
+            <b>Исходный код:</b> <a href="https://github.com/80LevelElf/PersonalBlog">GitHub</a>
+        </div>
+        <div class="project_info_row tech">
+            <b>Технологии:</b>
+            <label class="blacked">C#</label>,  <label class="blacked">JavaScript</label>,  
+            <label class="blacked">JQuery</label>,  <label class="blacked">JQuery UI</label>,  
+            <label class="blacked">T-SQL</label>,  <label class="blacked">Linq to DB</label>.
         </div>
     </p>
 </div>

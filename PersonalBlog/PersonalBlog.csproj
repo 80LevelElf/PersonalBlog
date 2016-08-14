@@ -148,6 +148,7 @@
     <Content Include="Content\images\EPAM-logo.png" />
     <Content Include="Content\images\GitHub-32.png" />
     <Content Include="Content\images\LinkedIn-32.png" />
+    <Content Include="Content\images\newochem-logo.png" />
     <Content Include="Content\images\Resume-32.png" />
     <Content Include="Content\images\roko-logo.png" />
     <Content Include="Content\images\taxi-logo.png" />

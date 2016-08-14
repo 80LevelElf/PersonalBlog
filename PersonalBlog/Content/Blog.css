@@ -100,7 +100,7 @@ header a.nick {
 
 div.content-div {
     min-height: 50%;
-    background: rgba(255, 255, 255, 0.95);
+    background: #ffffff;
     margin-top: 20px;
     display: block;
 
@@ -113,6 +113,8 @@ div.content-div {
 label.blacked {
     background-color: #eeeeee;
     border: 1px solid #dddddd;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 ul.link-list {
@@ -263,15 +265,15 @@ div.my_project_div {
     margin: 15px;
     margin-left: 0;
     padding: 5px;
+
+    font-size: 16px;
 }
 
-div.my_project_div > label {
+div.my_project_div label, div.my_project_div a {
     vertical-align: top;
 }
 
 div.my_project_div div.project_info_row {
-    font-size: 16px;
-
     display: inline-block;
     min-width: 45%;
     padding-top: 5px;
