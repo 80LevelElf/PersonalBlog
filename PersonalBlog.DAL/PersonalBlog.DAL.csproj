@@ -43,7 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BlogDb.cs" />
-    <Compile Include="DALs\PostDAL.cs" />
+    <Compile Include="DALs\PostPreviewDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

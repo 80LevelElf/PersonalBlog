@@ -1,12 +1,13 @@
 ﻿using System.Web.Mvc;
+using PersonalBlog.DAL.DALs;
 
 namespace PersonalBlog.Controllers
 {
-    public class HomeController : Controller
+    public class PostPreviewsController : Controller
     {
         public ActionResult Index()
         {
-            return RedirectToAction("Index", "PostPreviews");
+			return View(PostPreviewDal.GetList(1, 10));
         }
 
     }

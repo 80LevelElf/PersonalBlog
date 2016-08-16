@@ -6,16 +6,26 @@
 /*----------------------------------------------
     Common elements
     */
+
+:root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 body {
     background-image: url("images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
-    margin-left: 12%;
-    margin-right: 12%;
     
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
 }
 
 a {
@@ -36,11 +46,11 @@ header {
     display: flex;
     background: rgba(255, 255, 255, 0.80);
     padding-left: 7px;
-    margin-top: 14px;
+    margin-top: 15px;
 
     font-size: 20px;
-
     font-family: blogFont;
+    min-height: 45px;
 }
 
 header a {
@@ -55,6 +65,15 @@ header a:hover, header a:focus, header a.selected {
     background: rgba(70, 130, 180, 0.85);
     cursor: pointer;
     color: white;
+}
+
+footer {
+    flex: 0 1 40px;
+    border-top: 2px solid #aaaaaa;
+    background: #ffffff;
+    padding: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 table {
@@ -99,20 +118,23 @@ header a.nick {
 }
 
 div.content-div {
-    min-height: 50%;
-    background: rgba(255, 255, 255, 0.95);
-    margin-top: 20px;
+    background: #ffffff;
+    margin-top: 14px;
     display: block;
 
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 6px;
     padding-bottom: 6px;
+
+    flex: 1 1 auto;
 }
 
 label.blacked {
     background-color: #eeeeee;
     border: 1px solid #dddddd;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 ul.link-list {

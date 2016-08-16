@@ -8,5 +8,7 @@ namespace PersonalBlog.DAL
 		public BlogDb() : base("MS_SQL") { }
 
 		public ITable<PostDto> Posts { get { return GetTable<PostDto>(); } }
+
+		public ITable<PostPreviewDto> PostPreviews { get { return GetTable<PostPreviewDto>(); } }
 	}
 }

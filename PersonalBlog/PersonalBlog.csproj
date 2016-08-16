@@ -136,6 +136,7 @@
     <Compile Include="Controllers\AboutMeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MyProjectsController.cs" />
+    <Compile Include="Controllers\PostPreviewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -148,6 +149,7 @@
     <Content Include="Content\images\EPAM-logo.png" />
     <Content Include="Content\images\GitHub-32.png" />
     <Content Include="Content\images\LinkedIn-32.png" />
+    <Content Include="Content\images\newochem-logo.png" />
     <Content Include="Content\images\Resume-32.png" />
     <Content Include="Content\images\roko-logo.png" />
     <Content Include="Content\images\taxi-logo.png" />
@@ -199,6 +201,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\AboutMe\Index.cshtml" />
     <Content Include="Views\MyProjects\Index.cshtml" />
+    <Content Include="Views\PostPreviews\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -206,6 +209,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PersonalBlog.DAL\PersonalBlog.DAL.csproj">
+      <Project>{a2e04744-0221-41c1-92c9-32f48a707ec7}</Project>
+      <Name>PersonalBlog.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PersonalBlog.Entities\PersonalBlog.Entities.csproj">
+      <Project>{d5f687ab-f0a5-47bf-9ed2-d1638470ad58}</Project>
+      <Name>PersonalBlog.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
