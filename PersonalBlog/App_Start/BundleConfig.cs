@@ -22,7 +22,8 @@ namespace PersonalBlog
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
-            bundles.Add(new StyleBundle("~/Content/css/blog").Include("~/Content/Blog.css"));
+            bundles.Add(new StyleBundle("~/Content/css/aboutMe").Include("~/Content/pages/aboutMe.css"));
+			bundles.Add(new StyleBundle("~/Content/css/myProjects").Include("~/Content/pages/myProjects.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.theme.css",       
