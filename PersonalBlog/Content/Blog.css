@@ -6,16 +6,26 @@
 /*----------------------------------------------
     Common elements
     */
+
+:root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 body {
     background-image: url("images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
-    margin-left: 12%;
-    margin-right: 12%;
     
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
 }
 
 a {
@@ -36,11 +46,11 @@ header {
     display: flex;
     background: rgba(255, 255, 255, 0.80);
     padding-left: 7px;
-    margin-top: 14px;
+    margin-top: 15px;
 
     font-size: 20px;
-
     font-family: blogFont;
+    min-height: 45px;
 }
 
 header a {
@@ -55,6 +65,15 @@ header a:hover, header a:focus, header a.selected {
     background: rgba(70, 130, 180, 0.85);
     cursor: pointer;
     color: white;
+}
+
+footer {
+    flex: 0 1 40px;
+    border-top: 2px solid #aaaaaa;
+    background: #ffffff;
+    padding: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 table {
@@ -99,15 +118,16 @@ header a.nick {
 }
 
 div.content-div {
-    min-height: 50%;
     background: #ffffff;
-    margin-top: 20px;
+    margin-top: 14px;
     display: block;
 
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 6px;
     padding-bottom: 6px;
+
+    flex: 1 1 auto;
 }
 
 label.blacked {
@@ -128,180 +148,6 @@ label.separator {
     font-size: 22px;
     border-bottom: 1px solid #aaaaaa;
     padding-bottom: 3px;
-}
-
-/*----------------------------------------------
-    Page specific
-    */
-
-/*About me*/
-a.link-button {
-    padding: 4px;
-    padding-left: 32px;
-    padding-right: 6px;
-    height: 28px;
-    display: inline-block;
-
-    font-size: 20px;
-    font-weight: normal;
-    background-position-y: 2px;
-    background-repeat: no-repeat;
-}
-
-a.link-button.resume {
-    background-image: url("images/Resume-32.png");
-}
-
-a.link-button.github {
-    background-image: url("images/GitHub-32.png");
-}
-
-a.link-button.linkedin {
-    background-image: url("images/LinkedIn-32.png");
-}
-
-div.company-logo-div {
-    display: inline-block;
-    text-align:center;
-    border-right: 1px solid #999999;
-    padding: 10px;
-    width: 150px;
-}
-
-div.company-logo-div a {
-    border: 0;
-    display: block;
-    width: 128px;
-    height: 48px;
-    margin: auto;
-    border: 1px solid #999999;
-    background-color: white;
-    background-repeat: no-repeat;
-    padding: 0;
-}
-
-div.company-logo-div a.work-epam {
-    background-image: url(images/EPAM-logo.png);
-}
-
-div.company-logo-div a.work-roko {
-    background-image: url(images/roko-logo.png);
-}
-
-div.company-logo-div a.work-taxi {
-    background-image: url(images/taxi-logo.png);
-}
-
-div.company-logo-div a.work-volgasoft {
-    background-image: url(images/volgasoft-logo.png);
-}
-
-div.company-work-description {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 20px;
-    max-width: 65%;
-    font-size: 18px;
-}
-
-div.company-work-description table td{
-    padding-right: 15px;
-}
-
-div.company-work-description table progress {
-    vertical-align: baseline;
-}
-
-div.skills-group {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 10px;
-    border: 1px solid #ededed;
-    margin-top: 15px;
-    min-width: 45%;
-}
-
-div.skills-group table {
-    width: 100%;
-}
-
-div.skills-group label {
-    display: block;
-    text-align: center;
-}
-
-div.skills-group label.backend-net {
-    background-color: #7b68ee;
-    color: white;
-}
-
-div.skills-group label.fronend-net {
-    background-color: #9932cc;
-    color: white;
-}
-
-div.skills-group label.data-bases {
-    background-color: #ff4500;
-    color: white;
-}
-
-div.skills-group label.cpp {
-    background-color: #008080;
-    color: white;
-}
-
-div.skills-group label.java {
-    background-color: #483d8b;
-    color: white;
-}
-
-div.skills-group label.other {
-    background-color: #ffa500;
-    color: white;
-}
-
-/*My projects*/
-div.my_project_div {
-    margin: 15px;
-    margin-left: 0;
-    padding: 5px;
-
-    font-size: 16px;
-}
-
-div.my_project_div label, div.my_project_div a {
-    vertical-align: top;
-}
-
-div.my_project_div div.project_info_row {
-    display: inline-block;
-    min-width: 45%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    margin-left: 5px;
-}
-
-div.my_project_div div.project_info_row.project_site {
-    border-left: 2px solid #9932cc;
-}
-
-div.my_project_div div.project_info_row.license {
-    border-left: 2px solid #008b8b;
-}
-
-div.my_project_div div.project_info_row.source-link {
-    border-left: 2px solid #ff0000;
-}
-
-div.my_project_div div.project_info_row.documentation {
-    border-left: 2px solid #0000ff;
-}
-
-div.my_project_div div.project_info_row.tech {
-    border-left: 2px solid #a0522d;
 }
 
 /*----------------------------------------------

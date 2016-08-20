@@ -1,0 +1,42 @@
+﻿div.my_project_div {
+    margin: 15px;
+    margin-left: 0;
+    padding: 5px;
+
+    font-size: 16px;
+}
+
+div.my_project_div label, div.my_project_div a {
+    vertical-align: top;
+}
+
+div.my_project_div div.project_info_row {
+    display: inline-block;
+    min-width: 45%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 5px;
+}
+
+div.my_project_div div.project_info_row.project_site {
+    border-left: 2px solid #9932cc;
+}
+
+div.my_project_div div.project_info_row.license {
+    border-left: 2px solid #008b8b;
+}
+
+div.my_project_div div.project_info_row.source-link {
+    border-left: 2px solid #ff0000;
+}
+
+div.my_project_div div.project_info_row.documentation {
+    border-left: 2px solid #0000ff;
+}
+
+div.my_project_div div.project_info_row.tech {
+    border-left: 2px solid #a0522d;
+}

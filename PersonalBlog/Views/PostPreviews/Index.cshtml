@@ -1,0 +1,14 @@
+﻿@using PersonalBlog.Entities
+@model List<PostPreviewDto>
+
+@{
+    ViewBag.Title = "Мои записи";
+    Layout = "~/Views/Shared/_BlogLayout.cshtml";
+}
+
+@{
+    foreach (PostPreviewDto post in Model)
+    {
+        <label>@post.Title</label>
+    }
+}
