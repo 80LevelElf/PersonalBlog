@@ -1,5 +1,7 @@
-﻿using System.Web.Mvc;
+﻿using System.Collections.Generic;
+using System.Web.Mvc;
 using PersonalBlog.DAL.DALs;
+using PersonalBlog.Entities;
 
 namespace PersonalBlog.Controllers
 {
@@ -7,7 +9,7 @@ namespace PersonalBlog.Controllers
     {
         public ActionResult Index()
         {
-			return View(PostPreviewDal.GetList(1, 10));
+			return View(new List<PostPreviewDto>());
         }
 
     }

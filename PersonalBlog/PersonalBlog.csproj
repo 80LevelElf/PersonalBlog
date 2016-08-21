@@ -144,7 +144,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Blog.css" />
-    <Content Include="Content\images\background.jpg" />
+    <Content Include="Content\images\background.jpeg" />
     <Content Include="Content\images\bigio-logo.png" />
     <Content Include="Content\images\EPAM-logo.png" />
     <Content Include="Content\images\GitHub-32.png" />
@@ -163,13 +163,13 @@
     <Content Include="Content\themes\base\images\ui-icons_cc0000_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_ffffff_256x240.png" />
     <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery-ui.min.css" />
     <Content Include="Content\themes\base\jquery-ui.structure.css" />
     <Content Include="Content\themes\base\jquery-ui.theme.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Content\fonts\Arsenal-Regular.otf" />
-    <Content Include="Content\fonts\Akrobat-Regular.otf" />
+    <Content Include="Content\fonts\OpenSans-Regular.ttf" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />

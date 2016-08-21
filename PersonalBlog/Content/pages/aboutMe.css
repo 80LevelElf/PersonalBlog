@@ -2,10 +2,10 @@
     padding: 4px;
     padding-left: 32px;
     padding-right: 6px;
-    height: 28px;
+    height: 25px;
     display: inline-block;
 
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
     background-position-y: 2px;
     background-repeat: no-repeat;
@@ -81,44 +81,31 @@ div.skills-group {
     margin-right: 10px;
     border: 1px solid #ededed;
     margin-top: 15px;
-    min-width: 45%;
+
+    min-width: 48%;
 }
 
 div.skills-group table {
     width: 100%;
 }
 
+div.skills-group table td {
+    width: 50%;
+}
+
+div.skills-group table td progress {
+    width: 100%;
+}
+
 div.skills-group label {
     display: block;
     text-align: center;
-}
 
-div.skills-group label.backend-net {
-    background-color: #7b68ee;
-    color: white;
-}
+    background-color: #f5f5f5;
+ 
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
 
-div.skills-group label.fronend-net {
-    background-color: #9932cc;
-    color: white;
-}
-
-div.skills-group label.data-bases {
-    background-color: #ff4500;
-    color: white;
-}
-
-div.skills-group label.cpp {
-    background-color: #008080;
-    color: white;
-}
-
-div.skills-group label.java {
-    background-color: #483d8b;
-    color: white;
-}
-
-div.skills-group label.other {
-    background-color: #ffa500;
-    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }

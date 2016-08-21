@@ -1,6 +1,6 @@
 ﻿@font-face {
-    font-family: blogFont;
-    src: url(fonts/Arsenal-Regular.otf);
+    font-family: openSansFont;
+    src: url(fonts/OpenSans-Regular.ttf);
 }
 
 /*----------------------------------------------
@@ -14,18 +14,16 @@
 }
 
 body {
-    background-image: url("images/background.jpg");
+    background-image: url("images/background.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-family: openSansFont, "Segoe UI", Verdana, Helvetica, Sans-Serif;
 
     height: 100%;
     width: 80%;
     margin: 0 auto;
-    display: flex;
-    flex-flow: column;
 }
 
 a {
@@ -44,13 +42,16 @@ a:hover {
 
 header {
     display: flex;
-    background: rgba(255, 255, 255, 0.80);
-    padding-left: 7px;
-    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.8);
 
-    font-size: 20px;
-    font-family: blogFont;
-    min-height: 45px;
+    padding: 0;
+    padding-left: 4px;
+
+    margin: 0;
+    margin-top: 10px;
+
+    font-size: 16px;
+    min-height: 40px;
 }
 
 header a {
@@ -62,7 +63,7 @@ header a {
 }
 
 header a:hover, header a:focus, header a.selected {
-    background: rgba(70, 130, 180, 0.85);
+    background: #1e90ff;
     cursor: pointer;
     color: white;
 }
@@ -97,9 +98,71 @@ td {
     padding: 5px;
 }
 
+th {
+    text-align: center;
+
+    background-color: #f5f5f5;
+ 
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
 
 p, label, ul {
-    font-size: 18px;
+    font-size: 16px;
+}
+
+/*Web-kit progress bar*/
+
+progress[value] {
+  /* Reset the default appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    height: 16px;
+
+      /*background-size: 35px 20px, 100% 100%, 100% 100%; */
+
+    /*For IE 10*/
+    color: #1e90ff;
+    background-color: white;
+    border: 1px solid #aaaaaa;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: white;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .07) 33%, 
+	                           rgba(0,0, 0, .07) 66%, transparent 66%),
+	   -webkit-linear-gradient(top, 
+	                           rgba(255, 255, 255, .25), 
+	                           rgba(0, 0, 0, .25)),
+	   -webkit-linear-gradient(left, #f44, #008000);
+}
+
+/*Mozilla progress bar*/
+progress[value]::-moz-progress-bar { 
+  background-image:
+    -moz-linear-gradient(
+      135deg, 
+      transparent 33%, 
+      rgba(0, 0, 0, 0.07) 33%, 
+      rgba(0, 0, 0, 0.07) 66%, 
+      transparent 66% 
+    ),
+    -moz-linear-gradient(
+      top, 
+      rgba(255, 255, 255, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    -moz-linear-gradient(left, #f44, #008000);
 }
 
 /*----------------------------------------------
@@ -110,11 +173,15 @@ header a.nick {
     background: rgba(0, 0, 0, 0.8);
     color: white;
 
-    padding: 6px;
-    margin: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 0;
+
+    margin: 4px;
     margin-left: 0;
 
-    font-size: 18px;
+    font-size: 16px;
 }
 
 div.content-div {
@@ -126,13 +193,10 @@ div.content-div {
     padding-right: 50px;
     padding-top: 6px;
     padding-bottom: 6px;
-
-    flex: 1 1 auto;
 }
 
 label.blacked {
-    background-color: #eeeeee;
-    border: 1px solid #dddddd;
+    font-weight: bold;
     padding-left: 2px;
     padding-right: 2px;
 }
@@ -165,8 +229,17 @@ div.ui-tabs-panel {
 
 .ui-widget-content a {
     color: black;
-}
+} 
 
 .ui-widget-content a:hover {
     color: blue;
+}
+
+.ui-widget {
+    font-family: openSansFont, "Segoe UI", Verdana, Helvetica, Sans-Serif !important;
+}
+
+.ui-tabs-nav {
+    background-color: transparent !important;
+    border-bottom: 1px solid #cccccc !important;
 }
