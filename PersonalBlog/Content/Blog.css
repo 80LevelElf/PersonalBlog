@@ -129,40 +129,26 @@ progress[value] {
     /*For IE 10*/
     color: #1e90ff;
     background-color: white;
+    background-image: url("images/progressbar_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
     border: 1px solid #aaaaaa;
 }
 
 progress[value]::-webkit-progress-bar {
-    background-color: white;
+    background-image: url("images/progressbar_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 progress[value]::-webkit-progress-value {
-  background-image:
-	   -webkit-linear-gradient(-45deg, 
-	                           transparent 33%, rgba(0, 0, 0, .07) 33%, 
-	                           rgba(0,0, 0, .07) 66%, transparent 66%),
-	   -webkit-linear-gradient(top, 
-	                           rgba(255, 255, 255, .25), 
-	                           rgba(0, 0, 0, .25)),
-	   -webkit-linear-gradient(left, #f44, #008000);
+    background-color: rgba(30, 144, 255, 0.7);
 }
 
 /*Mozilla progress bar*/
 progress[value]::-moz-progress-bar { 
-  background-image:
-    -moz-linear-gradient(
-      135deg, 
-      transparent 33%, 
-      rgba(0, 0, 0, 0.07) 33%, 
-      rgba(0, 0, 0, 0.07) 66%, 
-      transparent 66% 
-    ),
-    -moz-linear-gradient(
-      top, 
-      rgba(255, 255, 255, 0.25), 
-      rgba(0, 0, 0, 0.25)
-    ),
-    -moz-linear-gradient(left, #f44, #008000);
+    background-color: rgba(30, 144, 255, 0.7);
 }
 
 /*----------------------------------------------
