@@ -9,6 +9,17 @@
 @{
     foreach (PostPreviewDto post in Model)
     {
-        <label>@post.Title</label>
+        <div class="post-wrapper">
+            <div class="header">
+                <a class="title">@post.Title</a>
+                <i class="added-time">(@post.CreationDate)</i>
+            </div>
+            <div class="source">
+                @post.Source
+            </div>
+            <div class="info">
+                <a class="to-detail">Подробнее</a>
+            </div>
+        </div>
     }
 }

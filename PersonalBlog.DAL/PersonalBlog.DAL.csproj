@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="BlogDb.cs" />
     <Compile Include="DALs\PostPreviewDal.cs" />
+    <Compile Include="MockDAL\PostPreviewMockDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
