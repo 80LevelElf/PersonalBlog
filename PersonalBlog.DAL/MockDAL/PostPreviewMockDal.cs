@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using PersonalBlog.Entities;
 
 namespace PersonalBlog.DAL.MockDAL
@@ -17,7 +15,7 @@ namespace PersonalBlog.DAL.MockDAL
 					PostId = -1,
 					CreationDate = DateTime.Now,
 					UpdationDate = DateTime.Now,
-					Source = @"
+					Preview = @"
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
@@ -31,7 +29,7 @@ namespace PersonalBlog.DAL.MockDAL
 					PostId = -1,
 					CreationDate = DateTime.Now,
 					UpdationDate = DateTime.Now,
-					Source = @"
+					Preview = @"
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
@@ -45,7 +43,7 @@ namespace PersonalBlog.DAL.MockDAL
 					PostId = -2,
 					CreationDate = DateTime.Now,
 					UpdationDate = DateTime.Now,
-					Source = @"
+					Preview = @"
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
@@ -59,7 +57,7 @@ namespace PersonalBlog.DAL.MockDAL
 					PostId = -3,
 					CreationDate = DateTime.Now,
 					UpdationDate = DateTime.Now,
-					Source = @"
+					Preview = @"
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT

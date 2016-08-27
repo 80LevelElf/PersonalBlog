@@ -136,6 +136,7 @@
     <Compile Include="Controllers\AboutMeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MyProjectsController.cs" />
+    <Compile Include="Controllers\PostController.cs" />
     <Compile Include="Controllers\PostPreviewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -157,6 +158,7 @@
     <Content Include="Content\images\volgasoft-logo.png" />
     <Content Include="Content\pages\aboutMe.css" />
     <Content Include="Content\pages\myProjects.css" />
+    <Content Include="Content\pages\post-previews.css" />
     <Content Include="Content\themes\base\images\ui-icons_444444_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_555555_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_777620_256x240.png" />
@@ -203,6 +205,7 @@
     <Content Include="Views\AboutMe\Index.cshtml" />
     <Content Include="Views\MyProjects\Index.cshtml" />
     <Content Include="Views\PostPreviews\Index.cshtml" />
+    <Content Include="Views\Post\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
