@@ -1,0 +1,32 @@
+﻿div.post-wrapper {
+    display: block;
+
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+div.post-wrapper div.header {
+    display: block;
+}
+
+div.post-wrapper div.header label.title {
+    display: inline-block;
+    border-bottom: 0;
+
+    margin: 0;
+
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 8px;
+
+    font-size: 20px;
+}
+
+div.post-wrapper div.header i.added-time {
+    float: right;
+}
+
+div.post-wrapper div.source {
+    display: block;
+}

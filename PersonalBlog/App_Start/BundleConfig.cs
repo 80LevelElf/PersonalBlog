@@ -26,6 +26,7 @@ namespace PersonalBlog
             bundles.Add(new StyleBundle("~/Content/css/aboutMe").Include("~/Content/pages/aboutMe.css"));
 			bundles.Add(new StyleBundle("~/Content/css/myProjects").Include("~/Content/pages/myProjects.css"));
             bundles.Add(new StyleBundle("~/Content/css/post-previews").Include("~/Content/pages/post-previews.css"));
+            bundles.Add(new StyleBundle("~/Content/css/post").Include("~/Content/pages/post.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.min.theme.css",       

@@ -159,6 +159,7 @@
     <Content Include="Content\pages\aboutMe.css" />
     <Content Include="Content\pages\myProjects.css" />
     <Content Include="Content\pages\post-previews.css" />
+    <Content Include="Content\pages\post.css" />
     <Content Include="Content\themes\base\images\ui-icons_444444_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_555555_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_777620_256x240.png" />

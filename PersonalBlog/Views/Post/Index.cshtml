@@ -1,0 +1,18 @@
+﻿@model PersonalBlog.Entities.PostDto
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_BlogLayout.cshtml";
+}
+
+@Styles.Render("~/Content/css/post")
+
+<div class="post-wrapper">
+    <div class="header">
+        <label class="title">@Model.Title</label>
+        <i class="added-time">@Model.UpdationDate.ToShortDateString()</i>
+    </div>
+    <div class="source">
+        @Model.Source
+    </div>
+</div>
