@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using PersonalBlog.DAL.DALs;
 using PersonalBlog.DAL.MockDAL;
 
 namespace PersonalBlog.Controllers
@@ -7,7 +8,7 @@ namespace PersonalBlog.Controllers
     {
         public ActionResult Index()
         {
-			return View(PostPreviewMockDal.GetList(1, 10));
+			return View(PostPreviewDal.GetList(1, 10));
         }
 
     }

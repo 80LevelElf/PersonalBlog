@@ -15,7 +15,7 @@ namespace PersonalBlog.DAL.MockDAL
 					PostId = -1,
 					CreationDate = DateTime.Now,
 					UpdationDate = DateTime.Now,
-					Preview = @"
+					SourcePreview = @"
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
@@ -29,7 +29,7 @@ namespace PersonalBlog.DAL.MockDAL
 					PostId = -1,
 					CreationDate = DateTime.Now,
 					UpdationDate = DateTime.Now,
-					Preview = @"
+					SourcePreview = @"
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
@@ -43,7 +43,7 @@ namespace PersonalBlog.DAL.MockDAL
 					PostId = -2,
 					CreationDate = DateTime.Now,
 					UpdationDate = DateTime.Now,
-					Preview = @"
+					SourcePreview = @"
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
@@ -57,7 +57,7 @@ namespace PersonalBlog.DAL.MockDAL
 					PostId = -3,
 					CreationDate = DateTime.Now,
 					UpdationDate = DateTime.Now,
-					Preview = @"
+					SourcePreview = @"
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
 						BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT BIG_BIG_TEXT
