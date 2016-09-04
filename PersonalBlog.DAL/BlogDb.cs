@@ -10,5 +10,7 @@ namespace PersonalBlog.DAL
 		public ITable<PostDto> Posts { get { return GetTable<PostDto>(); } }
 
 		public ITable<PostPreviewDto> PostPreviews { get { return GetTable<PostPreviewDto>(); } }
-	}
+
+        public ITable<PostBaseDto> PostBases { get { return GetTable<PostBaseDto>(); } }
+    }
 }

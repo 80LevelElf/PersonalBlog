@@ -2,3 +2,12 @@
     ViewBag.Title = "Админка";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+@Styles.Render("~/Content/css/adminLayout")
+
+<header>
+    <a class="selected">Посты</a>
+</header>
+<div class="admin-body">
+    @RenderBody()
+</div>

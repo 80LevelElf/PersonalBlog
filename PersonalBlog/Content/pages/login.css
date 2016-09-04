@@ -1,0 +1,27 @@
+﻿.text-danger {
+    color: red;
+}
+
+.login-form {
+    padding-top: 10%;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+
+.controller {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.login-button-area {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.fill-weight {
+    width: 100%;
+}
+
+.login-button {
+    float: right;
+}

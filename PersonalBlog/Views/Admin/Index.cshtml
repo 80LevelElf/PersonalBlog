@@ -1,0 +1,24 @@
+﻿@using PersonalBlog.Entities
+@model List<PostBaseDto>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="tools-panel">
+    <a class="add-new-post" href="@Url.Action("AddNewPost")">Добавить новый пост</a>
+</div>
+
+@foreach (PostBaseDto post in Model)
+{
+    <div class="post-item">
+        <i>[@post.PostId]</i>
+        <label>@post.Title</label>
+
+        <div class="action-div">
+            <a class="edit-link">редактировать</a>
+            <a class="delete-link">удалить</a>
+        </div>
+    </div>
+}

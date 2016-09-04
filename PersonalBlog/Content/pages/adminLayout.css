@@ -1,0 +1,101 @@
+﻿a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    margin: 0;
+    margin-top: 5px;
+    background-color: #eeeeee;
+    height: 40px;
+}
+
+header a {
+    display: inline-block;
+
+    height: 37px;
+    font-size: 20px;
+    padding-top: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header a.selected {
+    background-color: #00bfff;
+    color: white;
+}
+
+body {
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+div.admin-body {
+    padding: 10px;
+    padding-top: 0;
+
+    margin-top: 20px;
+
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+div.tools-panel {
+    display: block;
+    height: 50px;
+}
+
+/*Posts editor*/
+a.add-new-post {
+    background-color: #eeeeee;
+    padding: 5px;
+}
+
+a.add-new-post:hover {
+    background-color: #00bfff;
+    color: white;
+}
+
+div.post-item {
+    border-bottom: 2px solid #ccc;
+
+    display: block;
+    height: 35px;
+    font-size: 18px;
+
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    vertical-align: central;
+}
+
+div.post-item div.action-div {
+    display: inline-block;
+    float: right;
+}
+
+div.post-item div.action-div a {
+    padding: 4px;
+}
+
+div.post-item div.action-div a.edit-link {
+    color: green;
+    margin-right: 20px;
+}
+
+div.post-item div.action-div a.edit-link:hover {
+    background-color: green;
+    color: white;
+}
+
+div.post-item div.action-div a.delete-link {
+    color: red;
+}
+
+div.post-item div.action-div a.delete-link:hover {
+    background-color: red;
+    color: white;
+}

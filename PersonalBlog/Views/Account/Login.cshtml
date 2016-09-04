@@ -1,0 +1,50 @@
+﻿@model PersonalBlog.Models.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Styles.Render("~/Content/css/login")
+
+<div class="row">
+    <div>
+        <section id="loginForm">
+            @using (Html.BeginForm("Login", "Account", new {ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "login-form", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                <h4>Use a local account to log in.</h4>
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(m => m.UserName)
+                    <div>
+                        @Html.TextBoxFor(m => m.UserName, new { @class = "controller, fill-weight" })
+                        @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
+                    </div> 
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Password)
+                    <div>
+                        @Html.PasswordFor(m => m.Password, new { @class = "controller, fill-weight" })
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <div class="checkbox">
+                            @Html.CheckBoxFor(m => m.RememberMe, new { @class = "controller" })
+                            @Html.LabelFor(m => m.RememberMe)
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="login-button-area">
+                        <input type="submit" value="Log in" class="login-button"/>
+                    </div>
+                </div>
+            }
+        </section>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/jqueryval")
