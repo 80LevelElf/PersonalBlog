@@ -1,0 +1,15 @@
+﻿@model PersonalBlog.Models.AddOrUpdatePostModel
+
+@{
+    ViewBag.Title = "Добавить или обновить пост";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@Styles.Render("~/Content/css/markdown-editor")
+@Scripts.Render("~/bundles/markdown-editor")
+
+@Scripts.Render("~/bundles/addOrUpdatePost")
+
+<textarea id="md-editor" data-post-id="@Model.PostId">@Model.Source</textarea>
+
+<button id="add-or-update-button">Добавить или обновить</button>

@@ -1,5 +1,5 @@
 ﻿@using PersonalBlog.Entities
-@model List<PostPreviewDto>
+@model List<PostDto>
 
 @{
     ViewBag.Title = "Мои записи";
@@ -9,14 +9,14 @@
 @Styles.Render("~/Content/css/post-previews")
 
 @{
-    foreach (PostPreviewDto post in Model)
+    foreach (PostDto post in Model)
     {
         <div class="post-wrapper">
             <div class="header">
                 <a class="title" href="@Url.Action("Index", "Post", new {postId = post.PostId})">@post.Title</a>
             </div>
             <div class="source">
-                @post.SourcePreview
+                @post.Source
             </div>
             <div class="info">
                 <a class="to-detail" href="@Url.Action("Index", "Post", new {postId = post.PostId})">Подробнее</a>

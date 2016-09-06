@@ -4,13 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
-	@Styles.Render("~/Content/themes/base/css")
+    @Styles.Render("~/Content/css",
+        "~/Content/themes/base/css")
     <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
 </head>
 <body>
-    @Scripts.Render("~/bundles/jquery")
-	@Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/jquery",
+        "~/bundles/jqueryui",
+        "~/bundles/utils")
 
     @RenderBody()
 </body>

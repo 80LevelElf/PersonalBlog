@@ -49,9 +49,7 @@
     <Compile Include="BlogDb.cs" />
     <Compile Include="DALs\PostBaseDal.cs" />
     <Compile Include="DALs\PostDal.cs" />
-    <Compile Include="DALs\PostPreviewDal.cs" />
     <Compile Include="MockDAL\PostMockDal.cs" />
-    <Compile Include="MockDAL\PostPreviewMockDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Results\ProblemType.cs" />
     <Compile Include="Results\ResultOrProblem.cs" />

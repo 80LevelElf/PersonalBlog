@@ -6,8 +6,7 @@ namespace PersonalBlog
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.UseCdn = true;
-
+            //Scripts
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
@@ -23,11 +22,11 @@ namespace PersonalBlog
                 .Include("~/Scripts/markdown/simplemde.js")
                 .Include("~/Scripts/markdown/md-editor.js"));
 
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+            bundles.Add(new ScriptBundle("~/bundles/utils").Include("~/Scripts/utils.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/addOrUpdatePost").Include("~/Scripts/pages/addOrUpdatePost.js"));
+
+            //CSS
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
 			bundles.Add(new StyleBundle("~/Content/css/blog").Include("~/Content/blog.css"));
             bundles.Add(new StyleBundle("~/Content/css/aboutMe").Include("~/Content/pages/aboutMe.css"));

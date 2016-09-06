@@ -165,6 +165,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AddOrUpdatePostModel.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -259,6 +260,8 @@
     <Content Include="Scripts\markdown\markdown.js" />
     <Content Include="Scripts\markdown\md-editor.js" />
     <Content Include="Scripts\markdown\simplemde.js" />
+    <Content Include="Scripts\pages\addOrUpdatePost.js" />
+    <Content Include="Scripts\utils.js" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
@@ -295,11 +298,10 @@
     <Content Include="Views\PostPreviews\Index.cshtml" />
     <Content Include="Views\Post\Index.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
-    <Content Include="Views\Admin\AddNewPost.cshtml" />
+    <Content Include="Views\Admin\AddOrUpdatePost.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Scripts\pages\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PersonalBlog.DAL\PersonalBlog.DAL.csproj">

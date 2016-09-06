@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using PersonalBlog.DAL.Results;
 using PersonalBlog.Entities;
 
@@ -16,6 +17,14 @@ namespace PersonalBlog.DAL.DALs
                     return new ResultOrProblem<PostDto>(ProblemType.CantFindContent);
 
                 return new ResultOrProblem<PostDto>(post);
+            }
+        }
+
+        public static List<PostDto> GetList(int currentPage, int pageSize)
+        {
+            using (var blogDb = new BlogDb())
+            {
+                return blogDb.Posts.Skip((currentPage - 1) * pageSize).Take(pageSize).ToList();
             }
         }
     }
