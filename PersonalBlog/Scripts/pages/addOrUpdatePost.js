@@ -2,10 +2,16 @@
     $("#add-or-update-button").click(function() {
         var source = window.simpleMde.value();
 
-        //Just check it
+        //Checking
         var endIndexOfPreview = source.indexOf("$previewEnd$");
         if (endIndexOfPreview === -1) {
             alert("Не указанно $previewEnd$ !");
+            return;
+        }
+
+        var title = $("#title").val();
+        if (!title) {
+            alert("Не введен заголовок!");
             return;
         }
 
@@ -17,10 +23,14 @@
             data: JSON.stringify(
             {
                 PostId: postId,
-                Source: source
+                Source: source,
+                Title: title
             }),
             success: function (data) {
-                //window.location.href = ActionPathByUrl(data);
+                window.location.href = ActionPathByUrl(data);
+            },
+            error: function(xhr, status, error) {
+                alert(xhr.responseText);
             },
             contentType: "application/json"
         });

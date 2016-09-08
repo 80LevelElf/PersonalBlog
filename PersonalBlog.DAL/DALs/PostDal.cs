@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using LinqToDB;
 using PersonalBlog.DAL.Results;
 using PersonalBlog.Entities;
 
@@ -25,6 +26,22 @@ namespace PersonalBlog.DAL.DALs
             using (var blogDb = new BlogDb())
             {
                 return blogDb.Posts.Skip((currentPage - 1) * pageSize).Take(pageSize).ToList();
+            }
+        }
+
+        public static int Insert(PostDto newPost)
+        {
+            using (var blogDb = new BlogDb())
+            {
+                return blogDb.Insert(newPost);
+            }
+        }
+
+        public static void Update(PostDto postToUpdate)
+        {
+            using (var blogDb = new BlogDb())
+            {
+                blogDb.Insert(postToUpdate);
             }
         }
     }

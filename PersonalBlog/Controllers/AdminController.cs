@@ -22,9 +22,14 @@ namespace PersonalBlog.Controllers
         }
 
         [HttpPost]
-        public JsonResult AddOrUpdate(AddOrUpdatePostModel model)
+        public ActionResult AddOrUpdate(AddOrUpdatePostModel model)
         {
-            return new JsonResult();
+            if (model.PostId == null)
+                PostDal.Insert(model.ToPostDto());
+            else
+                PostDal.Update(model.ToPostDto());
+
+            return Content(Url.Action("Index"));
         }
     }
 }

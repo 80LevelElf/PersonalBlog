@@ -8,7 +8,7 @@ namespace PersonalBlog.Entities
 	{
 		[PrimaryKey, Identity]
 		[Column("PostId")]
-		public long PostId { get; set; }
+		public int PostId { get; set; }
 
 		[Column("Title")]
 		public string Title { get; set; }

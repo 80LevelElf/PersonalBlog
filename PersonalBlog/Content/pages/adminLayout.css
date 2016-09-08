@@ -99,3 +99,19 @@ div.post-item div.action-div a.delete-link:hover {
     background-color: red;
     color: white;
 }
+
+div.title-wrapper {
+    display: block;
+
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+div.title-wrapper label {
+    padding-right: 10px;
+}
+
+div.title-wrapper input#title {
+    width: 30%;
+}

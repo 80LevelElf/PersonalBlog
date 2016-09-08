@@ -1,6 +1,6 @@
 -- Post
 CREATE TABLE [dbo].[Post](
-	[PostId] [bigint] IDENTITY(1,1) NOT NULL,
+	[PostId] [int] IDENTITY(1,1) NOT NULL,
 	[Title] [nvarchar](200) NOT NULL,
 	[Source] [nvarchar](max) NOT NULL,
 	[PreviewEndIndex] [int] NOT NULL,

@@ -10,6 +10,11 @@
 
 @Scripts.Render("~/bundles/addOrUpdatePost")
 
+<div class="title-wrapper">
+    <label>Заголовок:</label>
+    <input id="title" type="text" />
+</div>
+
 <textarea id="md-editor" data-post-id="@Model.PostId">@Model.Source</textarea>
 
 <button id="add-or-update-button">Добавить или обновить</button>
