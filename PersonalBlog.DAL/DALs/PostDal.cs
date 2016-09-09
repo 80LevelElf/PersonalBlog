@@ -25,7 +25,7 @@ namespace PersonalBlog.DAL.DALs
         {
             using (var blogDb = new BlogDb())
             {
-                return blogDb.Posts.Skip((currentPage - 1) * pageSize).Take(pageSize).ToList();
+                return blogDb.Posts.OrderByDescending(i => i.CreationDate).Skip((currentPage - 1) * pageSize).Take(pageSize).ToList();
             }
         }
 

@@ -261,6 +261,7 @@
     <Content Include="Scripts\markdown\md-editor.js" />
     <Content Include="Scripts\markdown\simplemde.js" />
     <Content Include="Scripts\pages\addOrUpdatePost.js" />
+    <Content Include="Scripts\pages\postPreview.js" />
     <Content Include="Scripts\utils.js" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />

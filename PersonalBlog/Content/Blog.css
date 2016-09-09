@@ -226,6 +226,11 @@ div.ui-tabs-panel {
 }
 
 .ui-tabs-nav {
-    background-color: transparent !important;
+    background: transparent !important;
+    border: 0;
     border-bottom: 1px solid #cccccc !important;
+}
+
+.ui-tabs li.ui-state-hover a{
+    color: black !important;
 }

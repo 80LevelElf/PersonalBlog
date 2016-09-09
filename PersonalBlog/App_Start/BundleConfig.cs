@@ -22,9 +22,13 @@ namespace PersonalBlog
                 .Include("~/Scripts/markdown/simplemde.js")
                 .Include("~/Scripts/markdown/md-editor.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/markdown").Include(
+                        "~/Scripts/markdown/markdown.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/utils").Include("~/Scripts/utils.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/addOrUpdatePost").Include("~/Scripts/pages/addOrUpdatePost.js"));
+            bundles.Add(new ScriptBundle("~/bundles/postPreview").Include("~/Scripts/pages/postPreview.js"));
 
             //CSS
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
@@ -38,10 +42,11 @@ namespace PersonalBlog
 
             bundles.Add(new StyleBundle("~/Content/css/markdown-editor").Include("~/Content/markdown/simplemde.css"));
 
+            //bundles.Add(new StyleBundle("~/Content/themes/base/css").IncludeDirectory("~/Content/themes/base/", "*.css", true));
+
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
-                        "~/Content/themes/base/jquery.ui.min.theme.css",       
-                        "~/Content/themes/base/jquery-ui.css",
-                        "~/Content/themes/base/jquery-ui.structure.css"));
+                        "~/Content/themes/base/jquery.ui.all.css",       
+                        "~/Content/themes/base/jquery-ui.css"));
         }
     }
 }
