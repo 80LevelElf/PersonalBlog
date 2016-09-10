@@ -1,4 +1,4 @@
-﻿$(function () {
+﻿$(function() {
     var sourceElements = $("div.post-wrapper div.source");
 
     sourceElements.each(function(index, currentSourceElement) {

@@ -7,8 +7,11 @@
 }
 
 @Styles.Render("~/Content/css/post-previews")
+@Styles.Render("~/Content/css/highlightStyle")
+
 @Scripts.Render("~/bundles/postPreview")
 @Scripts.Render("~/bundles/markdown")
+@Scripts.Render("~/bundles/highlight")
 
 @{
     foreach (PostDto post in Model)
