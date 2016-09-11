@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using LinqToDB;
 using PersonalBlog.DAL.Results;
@@ -41,7 +42,19 @@ namespace PersonalBlog.DAL.DALs
         {
             using (var blogDb = new BlogDb())
             {
-                blogDb.Insert(postToUpdate);
+                blogDb.Update(postToUpdate);
+            }
+        }
+
+        public static void Delete(int postId)
+        {
+            using (var blogDb = new BlogDb())
+            {
+                var postToDelete = blogDb.Posts.FirstOrDefault(i => i.PostId == postId);
+                if (postToDelete == null)
+                    throw new ArgumentOutOfRangeException(nameof(postId), "Can't find post with specified post id");
+
+                blogDb.Delete(postToDelete);
             }
         }
     }

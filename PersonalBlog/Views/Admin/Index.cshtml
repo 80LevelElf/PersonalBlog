@@ -17,8 +17,8 @@
         <label>@post.Title</label>
 
         <div class="action-div">
-            <a class="edit-link">редактировать</a>
-            <a class="delete-link">удалить</a>
+            <a class="edit-link" href="@Url.Action("Update", new {postId = post.PostId})">редактировать</a>
+            <a class="delete-link"  href="@Url.Action("Delete", new {postId = post.PostId})">удалить</a>
         </div>
     </div>
 }

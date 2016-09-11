@@ -18,5 +18,15 @@ namespace PersonalBlog.Logic.Managers
                 CleanedSource = source.Replace(ConstsManager.PreviewEndString, string.Empty)
             };
         }
+
+        public static string RestoreSource(string source, int previewEndIndex)
+        {
+            if (previewEndIndex < 0 || previewEndIndex > source.Length)
+                throw new ArgumentOutOfRangeException(
+                    nameof(previewEndIndex),
+                    nameof(previewEndIndex) + "can't be less then source length.");
+
+            return source.Insert(previewEndIndex, ConstsManager.PreviewEndString);
+        }
     }
 }
