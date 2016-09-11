@@ -31,8 +31,8 @@
         },
         promptURLs: true,
         renderingConfig: {
-            singleLineBreaks: false,
-            codeSyntaxHighlighting: true
+        singleLineBreaks: false,
+        codeSyntaxHighlighting: false
         },
         //styleSelectedText: false,
         tabSize: 4

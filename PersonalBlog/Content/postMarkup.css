@@ -1,0 +1,12 @@
+﻿div.post-wrapper div.source p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+div.post-wrapper div.source h1 {
+    font-size: 20px;
+}
+
+div.post-wrapper div.source table {
+    min-width: 75%;
+}

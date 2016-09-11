@@ -1,13 +1,13 @@
 ﻿div.post-wrapper {
-    border-left: 1px solid #666;
-
     display: block;
 
     padding-top: 8px;
-    padding-bottom: 8px;
+    padding-bottom: 25px;
     padding-left: 15px;
     margin-bottom: 25px;
     margin-top: 15px;
+
+    border-bottom: 1px solid #bbb;
 }
 
 div.post-wrapper div.header {
@@ -25,7 +25,8 @@ div.post-wrapper div.header a.title {
     padding-top: 0;
     padding-bottom: 8px;
 
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: bolder;
 }
 
 div.post-wrapper div.source {

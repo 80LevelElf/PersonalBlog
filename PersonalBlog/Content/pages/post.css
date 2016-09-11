@@ -20,7 +20,8 @@ div.post-wrapper div.header label.title {
     padding-top: 0;
     padding-bottom: 8px;
 
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: bolder;
 }
 
 div.post-wrapper div.header i.added-time {
