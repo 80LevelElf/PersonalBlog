@@ -16,7 +16,7 @@ namespace PersonalBlog.Entities
         {
 	        get
 	        {
-	            if (PreviewEndIndex >= Source.Length)
+	            if (PreviewEndIndex > Source.Length)
                     throw new InvalidDataException("PreviewEndIndex can't be bigger the Source letters count");
 
 	            return Source.Substring(0, PreviewEndIndex);

@@ -27,6 +27,7 @@ namespace PersonalBlog
 
             bundles.Add(new ScriptBundle("~/bundles/utils").Include("~/Scripts/utils.js"));
 			bundles.Add(new ScriptBundle("~/bundles/highlight").Include("~/Scripts/highlight.js"));
+			bundles.Add(new ScriptBundle("~/bundles/postManager").Include("~/Scripts/postManager.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/addOrUpdatePost").Include("~/Scripts/pages/addOrUpdatePost.js"));
             bundles.Add(new ScriptBundle("~/bundles/postPreview").Include("~/Scripts/pages/postPreview.js"));

@@ -24,7 +24,7 @@
             strikethrough: false,
             underscoresBreakWords: true,
         },
-        showIcons: ["code", "table"],
+        showIcons: ["table"],
         placeholder: "Type here...",
         previewRender: function (plainText) {
             return markdown.toHTML(plainText, "Maruku");
