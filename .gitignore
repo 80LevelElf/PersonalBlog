@@ -73,3 +73,5 @@ _[Ss]cripts
 *.nupkg
 *.ncrunchsolution
 *.dot[Cc]over
+Web.Release.config
+/PersonalBlog/Web.Release.config

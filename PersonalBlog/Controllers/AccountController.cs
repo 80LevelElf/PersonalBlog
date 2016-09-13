@@ -24,7 +24,6 @@ namespace PersonalBlog.Controllers
         // POST: /Account/Login
         [HttpPost]
         [AllowAnonymous]
-        [ValidateAntiForgeryToken]
         public ActionResult Login(LoginViewModel model, string returnUrl)
         {
             if (!ModelState.IsValid)

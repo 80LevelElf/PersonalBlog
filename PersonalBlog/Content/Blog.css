@@ -1,6 +1,6 @@
 ﻿@font-face {
     font-family: openSansFont;
-    src: url(fonts/OpenSans-Regular.ttf);
+    src: url(/Content/fonts/OpenSans-Regular.ttf);
 }
 
 /*----------------------------------------------
@@ -14,7 +14,7 @@
 }
 
 body {
-    background-image: url("images/background.jpeg");
+    background-image: url("/Content/images/background.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -133,7 +133,7 @@ progress[value] {
     /*For IE 10*/
     color: #1e90ff;
     background-color: white;
-    background-image: url("images/progressbar_background.jpg");
+    background-image: url("/Content/images/progressbar_background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -141,7 +141,7 @@ progress[value] {
 }
 
 progress[value]::-webkit-progress-bar {
-    background-image: url("images/progressbar_background.jpg");
+    background-image: url("/Content/images/progressbar_background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

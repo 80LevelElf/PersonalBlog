@@ -18,12 +18,14 @@ namespace PersonalBlog
                         "~/Scripts/jquery.validate*"));
 
             bundles.Add(new ScriptBundle("~/bundles/markdown-editor")
-                .Include("~/Scripts/markdown/markdown.js")
                 .Include("~/Scripts/markdown/simplemde.js")
                 .Include("~/Scripts/markdown/md-editor.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/markdown").Include(
-                        "~/Scripts/markdown/markdown.js"));
+            //Turn off minification of this bundle, because it's crush all :(
+            var markDownBundle = new ScriptBundle("~/bundles/markdown").Include(
+                "~/Scripts/markdown/markdown.js");
+            markDownBundle.Transforms.Clear();
+            bundles.Add(markDownBundle);
 
             bundles.Add(new ScriptBundle("~/bundles/utils").Include("~/Scripts/utils.js"));
 			bundles.Add(new ScriptBundle("~/bundles/highlight").Include("~/Scripts/highlight.js"));
@@ -51,9 +53,11 @@ namespace PersonalBlog
 
 			bundles.Add(new StyleBundle("~/Content/css/highlightStyle").Include("~/Content/highlightStyles/vs.css"));
 
-            bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
-                        "~/Content/themes/base/jquery.ui.all.css",       
-                        "~/Content/themes/base/jquery-ui.css"));
+            bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(      
+                        "~/Content/themes/base/jquery.ui.core.css",
+                        "~/Content/themes/base/jquery.ui.button.css",
+                        "~/Content/themes/base/jquery.ui.tabs.css",
+                        "~/Content/themes/base/jquery.ui.theme.css"));
         }
     }
 }
