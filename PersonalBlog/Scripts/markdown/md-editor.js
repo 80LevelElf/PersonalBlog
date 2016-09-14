@@ -1,10 +1,20 @@
 ﻿$(function () {
+    var editor = $("#md-editor");
+
+    var canTurnOnAutosave = false;
+    if (!editor || editor.val())
+        canTurnOnAutosave = true;
+
+    var initialValue = "\n\n$previewEnd$";
+    if (editor && editor.val())
+        initialValue = editor.val();
+
     window.simpleMde = new SimpleMDE({
-        initialValue: "\n\n$previewEnd$",
+        initialValue: initialValue,
         autosave: {
-            enabled: true,
+            enabled: canTurnOnAutosave,
             uniqueId: "admin", //I'm the only one user of it
-            delay: 10000
+            delay: 5000
         },
         blockStyles: {
             bold: "__",
@@ -32,7 +42,7 @@
         promptURLs: true,
         renderingConfig: {
         singleLineBreaks: false,
-        codeSyntaxHighlighting: false
+        codeSyntaxHighlighting: true
         },
         //styleSelectedText: false,
         tabSize: 4
