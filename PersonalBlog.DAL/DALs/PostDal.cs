@@ -52,7 +52,7 @@ namespace PersonalBlog.DAL.DALs
             {
                 var postToDelete = blogDb.Posts.FirstOrDefault(i => i.PostId == postId);
                 if (postToDelete == null)
-                    throw new ArgumentOutOfRangeException(nameof(postId), "Can't find post with specified post id");
+					throw new ArgumentOutOfRangeException("postId", "Can't find post with specified post id");
 
                 blogDb.Delete(postToDelete);
             }

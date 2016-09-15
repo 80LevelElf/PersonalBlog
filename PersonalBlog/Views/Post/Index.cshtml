@@ -1,7 +1,7 @@
 ﻿@model PersonalBlog.Entities.PostDto
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = @Model.Title;
     Layout = "~/Views/Shared/_BlogLayout.cshtml";
 }
 
@@ -22,3 +22,9 @@
         @Model.Source
     </div>
 </div>
+
+@{
+    Disqus.Initialize("80levelelf");
+}
+
+@Disqus.ShowComments("post/" + Model.PostId)
