@@ -2,7 +2,7 @@
     var editor = $("#md-editor");
 
     var canTurnOnAutosave = false;
-    if (!editor || editor.val())
+    if (!editor || !editor.val())
         canTurnOnAutosave = true;
 
     var initialValue = "\n\n$previewEnd$";
