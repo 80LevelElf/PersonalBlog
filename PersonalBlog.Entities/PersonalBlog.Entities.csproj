@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\LogType.cs" />
+    <Compile Include="LogEntryDto.cs" />
     <Compile Include="PostBaseDto.cs" />
     <Compile Include="PostDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

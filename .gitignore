@@ -75,3 +75,4 @@ _[Ss]cripts
 *.dot[Cc]over
 Web.Release.config
 /PersonalBlog/Web.Release.config
+/PersonalBlog/Properties/PublishProfiles/*.pubxml

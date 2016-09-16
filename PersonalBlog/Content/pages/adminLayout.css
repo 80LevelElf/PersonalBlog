@@ -58,7 +58,7 @@ a.add-new-post:hover {
     color: white;
 }
 
-div.post-item {
+div.admin-list-item {
     border-bottom: 2px solid #ccc;
 
     display: block;
@@ -72,30 +72,30 @@ div.post-item {
     vertical-align: central;
 }
 
-div.post-item div.action-div {
+div.admin-list-item div.action-div {
     display: inline-block;
     float: right;
 }
 
-div.post-item div.action-div a {
+div.admin-list-item div.action-div a {
     padding: 4px;
 }
 
-div.post-item div.action-div a.edit-link {
+div.admin-list-item div.action-div a.edit-link {
     color: green;
     margin-right: 20px;
 }
 
-div.post-item div.action-div a.edit-link:hover {
+div.admin-list-item div.action-div a.edit-link:hover {
     background-color: green;
     color: white;
 }
 
-div.post-item div.action-div a.delete-link {
+div.admin-list-item div.action-div a.delete-link {
     color: red;
 }
 
-div.post-item div.action-div a.delete-link:hover {
+div.admin-list-item div.action-div a.delete-link:hover {
     background-color: red;
     color: white;
 }
