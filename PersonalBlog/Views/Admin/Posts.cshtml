@@ -1,5 +1,5 @@
 ﻿@using PersonalBlog.Entities
-@model List<PostBaseDto>
+@model PersonalBlog.DAL.Results.PageResult<PostBaseDto>
 
 @{
     ViewBag.Title = "Посты";
@@ -10,7 +10,7 @@
     <a class="add-new-post" href="@Url.Action("Add")">Добавить новый пост</a>
 </div>
 
-@foreach (PostBaseDto post in Model)
+@foreach (PostBaseDto post in Model.ResultList)
 {
     <div class="admin-list-item">
         <i>[@post.PostId]</i>

@@ -47,10 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BlogDb.cs" />
+    <Compile Include="DalManagers\PageManager.cs" />
     <Compile Include="DALs\LogEntryDal.cs" />
     <Compile Include="DALs\PostBaseDal.cs" />
     <Compile Include="DALs\PostDal.cs" />
+    <Compile Include="DalManagers\DefaulSizeManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Results\PageResult.cs" />
     <Compile Include="Results\ProblemType.cs" />
     <Compile Include="Results\ResultOrProblem.cs" />
   </ItemGroup>

@@ -7,7 +7,7 @@ namespace PersonalBlog.Controllers
     {
         public ActionResult Index()
         {
-			return View(PostDal.GetList(1, 10));
+			return View(PostDal.GetList(1));
         }
 
     }

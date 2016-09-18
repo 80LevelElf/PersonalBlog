@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using LinqToDB;
+using PersonalBlog.DAL.DalManagers;
+using PersonalBlog.DAL.Results;
 using PersonalBlog.Entities;
 
 namespace PersonalBlog.DAL.DALs
@@ -15,12 +17,18 @@ namespace PersonalBlog.DAL.DALs
             }
         }
 
-        public static List<LogEntryDto> GetList(int currentPage, int pageSize)
+		public static PageResult<LogEntryDto> GetList(int currentPage)
         {
+			int pageCount;
+			List<LogEntryDto> resultList;
+
             using (var blogDb = new BlogDb())
             {
-                return blogDb.LogEntries.OrderByDescending(i => i.Date).Skip((currentPage - 1) * pageSize).Take(pageSize).ToList();
+				pageCount = PageManager.GetPageCount(blogDb.LogEntries.Count());
+				resultList = blogDb.LogEntries.OrderByDescending(i => i.Date).GetPageResult(currentPage).ToList();
             }
+
+			return new PageResult<LogEntryDto>(currentPage, pageCount, resultList);
         }
     }
 }

@@ -1,18 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using PersonalBlog.Models;
 
 namespace PersonalBlog.Controllers
 {
     public class ElementController : Controller
     {
-        public PartialViewResult Pager(string action, string controller, int currentPageIndex)
+        public PartialViewResult Pager(string action, string controller, int currentPageIndex, int pageCount)
         {
             ViewBag.CurrentPageIndex = currentPageIndex;
 
-            return PartialView();
+            return PartialView(new PagerModel()
+            {
+	            Action = action,
+				Controller = controller,
+				CurrentPageIndex = currentPageIndex,
+				PageCount = pageCount
+            });
         }
 
     }

@@ -1,19 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using PersonalBlog.DAL.DalManagers;
+using PersonalBlog.DAL.Results;
 using PersonalBlog.Entities;
 
 namespace PersonalBlog.DAL.DALs
 {
     public static class PostBaseDal
     {
-        public static List<PostBaseDto> GetList(int currentPage, int pageSize)
-        {
+		public static PageResult<PostBaseDto> GetList(int currentPage)
+		{
+			int pageCount;
+			List<PostBaseDto> resultList;
+
             using (var blogDb = new BlogDb())
             {
-                return blogDb.PostBases.Skip((currentPage - 1) * pageSize).Take(pageSize).ToList();
+				pageCount = PageManager.GetPageCount(blogDb.PostBases.Count());
+				resultList = blogDb.PostBases.GetPageResult(currentPage).ToList();
             }
+
+			return new PageResult<PostBaseDto>(currentPage, pageCount, resultList);
         }
     }
 }

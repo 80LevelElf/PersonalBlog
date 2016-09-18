@@ -22,7 +22,7 @@ namespace PersonalBlog.Logic.Managers
             LogEntryDal.Insert(new LogEntryDto
             {
                 Date = DateTime.Now,
-                Source = $"Post[{title}]: {message}",
+                Source = string.Format("Post[{0}]: {1}", title, message),
                 Type = LogType.Posts
             });
         }

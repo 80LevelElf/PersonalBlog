@@ -1,3 +1,15 @@
-﻿<div class="pager">
-    
+﻿@model PersonalBlog.Models.PagerModel
+
+<div align="center" class="pager">
+    @if (Model.CurrentPageIndex != 1)
+    {
+        <a class="move-prev">Назад</a>
+    }
+    <label>| Страница: @ViewBag.CurrentPageIndex |</label>
+    @if (Model.CurrentPageIndex != Model.PageCount)
+    {
+        <a class="move-next">Вперед</a>
+    }
 </div>
+
+@Styles.Render("~/Content/css/pager")

@@ -1,13 +1,13 @@
 ﻿@using System.Globalization
 @using PersonalBlog.Entities
-@model List<LogEntryDto>
+@model PersonalBlog.DAL.Results.PageResult<LogEntryDto>
 
 @{
     ViewBag.Title = "Логи";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-@foreach (LogEntryDto log in Model)
+@foreach (LogEntryDto log in Model.ResultList)
 {
     <div class="admin-list-item">
         <b>[@log.Type.ToString()]</b>

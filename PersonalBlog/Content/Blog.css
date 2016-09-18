@@ -36,8 +36,8 @@ a {
 }
 
 a:hover {
-    color: blue;
-    border-color: blue;
+    color: #1e90ff;
+    border-color: #1e90ff;
 }
 
 header {
@@ -62,6 +62,7 @@ header a {
     padding-top: 10px;
     color: black;
     border-bottom: 0;
+    font-size: 15px;
 }
 
 header a:hover, header a:focus, header a.selected {
@@ -114,8 +115,8 @@ th {
     padding-right: 10px;
 }
 
-p, label, ul, code {
-    font-size: 18px;
+p, label, ul, code, a {
+    font-size: 17px;
 }
 
 /*Web-kit progress bar*/

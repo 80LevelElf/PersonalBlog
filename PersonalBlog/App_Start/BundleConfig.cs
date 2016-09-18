@@ -21,11 +21,7 @@ namespace PersonalBlog
                 .Include("~/Scripts/markdown/simplemde.js")
                 .Include("~/Scripts/markdown/md-editor.js"));
 
-            //Turn off minification of this bundle, because it's crush all :(
-			var markDownBundle = new Bundle("~/bundles/markdown").Include(
-                "~/Scripts/markdown/markdown.js");
-            markDownBundle.Transforms.Clear();
-            bundles.Add(markDownBundle);
+	        bundles.Add(new Bundle("~/bundles/markdown").Include("~/Scripts/markdown/markdown.js"));
 
 			bundles.Add(new Bundle("~/bundles/utils").Include("~/Scripts/utils.js"));
 			bundles.Add(new Bundle("~/bundles/highlight").Include("~/Scripts/highlight.js"));
@@ -48,6 +44,8 @@ namespace PersonalBlog
 				.Include("~/Content/postMarkup.css"));
 			bundles.Add(new Bundle("~/Content/css/login").Include("~/Content/pages/login.css"));
 			bundles.Add(new Bundle("~/Content/css/adminLayout").Include("~/Content/pages/adminLayout.css"));
+
+			bundles.Add(new Bundle("~/Content/css/pager").Include("~/Content/elements/pager.css"));
 
 			bundles.Add(new Bundle("~/Content/css/markdown-editor").Include("~/Content/markdown/simplemde.css"));
 

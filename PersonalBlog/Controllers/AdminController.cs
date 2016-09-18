@@ -16,12 +16,12 @@ namespace PersonalBlog.Controllers
 
 		public ActionResult Posts()
         {
-            return View(PostBaseDal.GetList(1, 10));
+            return View(PostBaseDal.GetList(1));
         }
 
         public ActionResult Logs()
         {
-            return View(LogEntryDal.GetList(1, 10));
+            return View(LogEntryDal.GetList(1));
         }
 
         public ActionResult Add()

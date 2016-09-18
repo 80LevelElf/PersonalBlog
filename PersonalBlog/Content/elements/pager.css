@@ -1,1 +1,41 @@
-﻿
+﻿div.pager {
+    display: block;
+    text-align: center;
+}
+
+div.pager a {
+    display: inline-block;
+
+    text-decoration: none;
+    border-bottom: 0;
+}
+
+div.pager a.move-prev {
+    background-image: url(/Content/images/move-prev.png);
+    background-repeat: no-repeat;
+    background-position: left;
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 23px;
+    padding-right: 5px;
+}
+
+div.pager a.move-prev:hover {
+    background-image: url(/Content/images/move-prev-hover.png);
+}
+
+div.pager a.move-next {
+    background-image: url(/Content/images/move-next.png);
+    background-repeat: no-repeat;
+    background-position: right;
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 23px;
+}
+
+div.pager a.move-next:hover {
+    background-image: url(/Content/images/move-next-hover.png);
+}

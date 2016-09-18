@@ -1,5 +1,5 @@
 ﻿@using PersonalBlog.Entities
-@model List<PostDto>
+@model PersonalBlog.DAL.Results.PageResult<PostDto>
 
 @{
     ViewBag.Title = "Мои записи";
@@ -15,7 +15,7 @@
 @Scripts.Render("~/bundles/highlight")
 
 @{
-    foreach (PostDto post in Model)
+    foreach (PostDto post in Model.ResultList)
     {
         <div class="post-wrapper">
             <div class="header">
@@ -31,6 +31,9 @@
         </div>
     }
 }
+
+@Html.Action("Pager", "Element", 
+    new { action = "Index", controller = "PostPreviews", currentPageIndex = Model.CurrentPage, pageCount = Model.PageCount})
 
 <script>
     $(function () {
