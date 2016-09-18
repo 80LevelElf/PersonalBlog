@@ -158,6 +158,7 @@
     <Compile Include="Controllers\AboutMeController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\ElementController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MyProjectsController.cs" />
     <Compile Include="Controllers\PostController.cs" />
@@ -171,6 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Blog.css" />
+    <Content Include="Content\elements\pager.css" />
     <Content Include="Content\highlightStyles\agate.css" />
     <Content Include="Content\highlightStyles\androidstudio.css" />
     <Content Include="Content\highlightStyles\ascetic.css" />
@@ -182,6 +184,10 @@
     <Content Include="Content\images\EPAM-logo.png" />
     <Content Include="Content\images\GitHub-32.png" />
     <Content Include="Content\images\LinkedIn-32.png" />
+    <Content Include="Content\images\move-next-hover.png" />
+    <Content Include="Content\images\move-next.png" />
+    <Content Include="Content\images\move-prev-hover.png" />
+    <Content Include="Content\images\move-prev.png" />
     <Content Include="Content\images\newochem-logo.png" />
     <Content Include="Content\images\progressbar_background.jpg" />
     <Content Include="Content\images\Resume-32.png" />
@@ -269,7 +275,7 @@
     <Content Include="Scripts\pages\postPreview.js" />
     <Content Include="Scripts\postManager.js" />
     <Content Include="Scripts\utils.js" />
-    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\Posts.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="App_Code\Disqus.cshtml" />
     <None Include="Properties\PublishProfiles\Ruzik.pubxml" />
@@ -311,6 +317,8 @@
     <Content Include="Views\Post\Index.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Admin\AddOrUpdatePost.cshtml" />
+    <Content Include="Views\Admin\Logs.cshtml" />
+    <Content Include="Views\Element\Pager.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

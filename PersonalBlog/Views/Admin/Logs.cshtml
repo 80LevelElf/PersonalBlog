@@ -1,0 +1,23 @@
+﻿@using System.Globalization
+@using PersonalBlog.Entities
+@model List<LogEntryDto>
+
+@{
+    ViewBag.Title = "Логи";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@foreach (LogEntryDto log in Model)
+{
+    <div class="admin-list-item">
+        <b>[@log.Type.ToString()]</b>
+        <i>{@log.Date.ToString(CultureInfo.InvariantCulture)}</i>
+        <label>@log.Source</label>
+    </div>
+}
+
+<script>
+    $(function () {
+        $("#logs").addClass("selected");
+    });
+</script>

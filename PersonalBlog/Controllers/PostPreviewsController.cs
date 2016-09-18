@@ -1,6 +1,5 @@
 ﻿using System.Web.Mvc;
 using PersonalBlog.DAL.DALs;
-using PersonalBlog.DAL.MockDAL;
 
 namespace PersonalBlog.Controllers
 {

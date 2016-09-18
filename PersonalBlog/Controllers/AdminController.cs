@@ -9,9 +9,19 @@ namespace PersonalBlog.Controllers
     [Authorize(Roles = "admin")]
     public class AdminController : Controller
     {
-		public ActionResult Index()
+        public ActionResult Index()
+        {
+            return RedirectToAction("Posts");
+        }
+
+		public ActionResult Posts()
         {
             return View(PostBaseDal.GetList(1, 10));
+        }
+
+        public ActionResult Logs()
+        {
+            return View(LogEntryDal.GetList(1, 10));
         }
 
         public ActionResult Add()
@@ -41,20 +51,28 @@ namespace PersonalBlog.Controllers
 
         public ActionResult Delete(int postId)
         {
+            //Get post title from DB too expensive for logging
+            LogManager.LogPost(postId.ToString(), "Post was deleted");
             PostDal.Delete(postId);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Posts");
         }
 
         [HttpPost]
         public ActionResult AddOrUpdate(AddOrUpdatePostModel model)
         {
             if (model.PostId == null)
+            {
+                LogManager.LogPost(model.Title, "Post was added");
                 PostDal.Insert(model.ToPostDto());
+            }
             else
+            {
+                LogManager.LogPost(model.Title, "Post was updated");
                 PostDal.Update(model.ToPostDto());
+            }
 
-            return Content(Url.Action("Index"));
+            return Content(Url.Action("Posts"));
         }
     }
 }

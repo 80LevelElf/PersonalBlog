@@ -2,7 +2,7 @@
 @model List<PostBaseDto>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Посты";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
@@ -12,7 +12,7 @@
 
 @foreach (PostBaseDto post in Model)
 {
-    <div class="post-item">
+    <div class="admin-list-item">
         <i>[@post.PostId]</i>
         <label>@post.Title</label>
 
@@ -22,3 +22,9 @@
         </div>
     </div>
 }
+
+<script>
+    $(function () {
+        $("#posts").addClass("selected");
+    });
+</script>
