@@ -23,6 +23,9 @@
     </div>
 }
 
+@Html.Action("Pager", "Element",
+    new { action = "Posts", controller = "Admin", currentPageIndex = Model.CurrentPage, pageCount = Model.PageCount })
+
 <script>
     $(function () {
         $("#posts").addClass("selected");

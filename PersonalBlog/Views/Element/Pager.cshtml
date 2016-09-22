@@ -3,12 +3,12 @@
 <div align="center" class="pager">
     @if (Model.CurrentPageIndex != 1)
     {
-        <a class="move-prev">Назад</a>
+        <a class="move-prev" href="@Url.Action(Model.Action, Model.Controller, new { pageIndex = Model.CurrentPageIndex - 1 })">Назад</a>
     }
     <label>| Страница: @ViewBag.CurrentPageIndex |</label>
-    @if (Model.CurrentPageIndex != Model.PageCount)
+        @if (Model.CurrentPageIndex != Model.PageCount)
     {
-        <a class="move-next">Вперед</a>
+        <a class="move-next" href="@Url.Action(Model.Action, Model.Controller, new { pageIndex = Model.CurrentPageIndex + 1 })">Вперед</a>
     }
 </div>
 

@@ -6,7 +6,7 @@ namespace PersonalBlog.Controllers
     {
         public ActionResult Index()
         {
-            return RedirectToAction("Index", "PostPreviews");
+            return RedirectToAction("Index", "PostPreviews", new { pageIndex = 1 });
         }
 
     }

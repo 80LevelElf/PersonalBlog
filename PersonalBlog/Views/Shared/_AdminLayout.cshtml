@@ -5,8 +5,8 @@
 @Styles.Render("~/Content/css/adminLayout")
 
 <header>
-    <a id="posts" href="@Url.Action("Posts", "Admin")">Посты</a>
-    <a id="logs" href="@Url.Action("Logs", "Admin")">Логи</a>
+    <a id="posts" href="@Url.Action("Posts", "Admin", new { pageIndex = 1 })">Посты</a>
+    <a id="logs" href="@Url.Action("Logs", "Admin", new { pageIndex = 1 })">Логи</a>
 </header>
 <div class="admin-body">
     @RenderBody()

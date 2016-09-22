@@ -1,13 +1,26 @@
-﻿function MoveTo(action, controller) {
-    var host = window.location.host;
-
-    window.location.href = "http://" + host + "/" + controller + "/" + action;
+﻿function MoveTo(action, controller, paramObject) {
+    window.location.href = ActionPath(action, controller, paramObject);
 }
 
-function ActionPath(action, controller) {
+function ActionPath(action, controller, paramObject) {
     var host = window.location.host;
 
-    return "http://" + host + "/" + controller + "/" + action;
+    var result = "http://" + host + "/" + controller + "/" + action + "/";
+
+    if (paramObject != null && paramObject.length !== 0) {
+        //Get all keys
+        var array = new Array();
+        for (var key in p) {
+            if (p.hasOwnProperty(key)) {
+                array.push(key + "=" + p[key]);
+            }
+        }
+
+        //Write it
+        result += "?" + array.join("&");
+    }
+
+    return result;
 }
 
 function ActionPathByUrl(url) {

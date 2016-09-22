@@ -11,17 +11,17 @@ namespace PersonalBlog.Controllers
     {
         public ActionResult Index()
         {
-            return RedirectToAction("Posts");
+	        return RedirectToAction("Posts", new { pageIndex = 1 });
         }
 
-		public ActionResult Posts()
+		public ActionResult Posts(int pageIndex)
         {
-            return View(PostBaseDal.GetList(1));
+			return View(PostBaseDal.GetList(pageIndex));
         }
 
-        public ActionResult Logs()
+		public ActionResult Logs(int pageIndex)
         {
-            return View(LogEntryDal.GetList(1));
+			return View(LogEntryDal.GetList(pageIndex));
         }
 
         public ActionResult Add()
@@ -55,7 +55,7 @@ namespace PersonalBlog.Controllers
             LogManager.LogPost(postId.ToString(), "Post was deleted");
             PostDal.Delete(postId);
 
-            return RedirectToAction("Posts");
+			return RedirectToAction("Posts", new { pageIndex = 1 });
         }
 
         [HttpPost]
@@ -72,7 +72,7 @@ namespace PersonalBlog.Controllers
                 PostDal.Update(model.ToPostDto());
             }
 
-            return Content(Url.Action("Posts"));
+            return Content(Url.Action("Posts", new { pageIndex = 1 }));
         }
     }
 }

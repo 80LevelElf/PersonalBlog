@@ -5,9 +5,9 @@ namespace PersonalBlog.Controllers
 {
     public class PostPreviewsController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index(int pageIndex)
         {
-			return View(PostDal.GetList(1));
+			return View(PostDal.GetList(pageIndex));
         }
 
     }
