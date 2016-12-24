@@ -279,6 +279,7 @@
     <Content Include="Views\Admin\Posts.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="App_Code\Disqus.cshtml" />
+    <None Include="Properties\PublishProfiles\Blog.pubxml" />
     <None Include="Properties\PublishProfiles\Ruzik.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
