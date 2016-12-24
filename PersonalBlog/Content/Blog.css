@@ -24,8 +24,8 @@ body {
     font-family: openSansFont, "Segoe UI", Verdana, Helvetica, Sans-Serif;
 
     height: 100%;
-    padding-left: calc(5vw - 15px); /*to remove spaces on smartphones*/
-    padding-right: calc(5vw - 15px); /*to remove spaces on smartphones*/
+    padding-left: calc(15vw - 60px); /*to remove spaces on smartphones*/
+    padding-right: calc(15vw - 60px); /*to remove spaces on smartphones*/
     margin: 0 auto;
 }
 
@@ -79,8 +79,8 @@ footer {
     border-top: 2px solid #aaaaaa;
     background: #ffffff;
     padding: 8px;
-    padding-left: calc(5vw - 15px); /*to remove spaces on smartphones*/
-    padding-right: calc(5vw - 15px); /*to remove spaces on smartphones*/
+    padding-left: calc(5vw - 10px); /*to remove spaces on smartphones*/
+    padding-left: calc(5vw - 10px); /*to remove spaces on smartphones*/
 }
 
 table {
