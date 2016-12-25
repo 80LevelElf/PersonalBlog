@@ -16,17 +16,28 @@
 }
 
 body {
-    background-image: url("/Content/images/background.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    
     font-family: openSansFont, "Segoe UI", Verdana, Helvetica, Sans-Serif;
 
     height: 100%;
     padding-left: calc(15vw - 60px); /*to remove spaces on smartphones*/
     padding-right: calc(15vw - 60px); /*to remove spaces on smartphones*/
     margin: 0 auto;
+}
+
+@media only screen and (min-width: 760px) {
+    body {
+        background-image: url("/Content/images/background.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+/* Smartphones ----------- */
+@media only screen and (max-width: 760px) {
+    body {
+        background-color: #333;
+    }
 }
 
 a {
@@ -55,6 +66,13 @@ header {
 
     font-size: 1rem;
     min-height: 40px;
+}
+
+/* Smartphones ----------- */
+@media only screen and (max-width: 760px) {
+    header {
+        margin-top: 5px;
+    }
 }
 
 header a {

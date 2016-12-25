@@ -85,6 +85,14 @@ div.skills-group {
     min-width: 48%;
 }
 
+/* Smartphones ----------- */
+@media only screen and (max-width: 760px) {
+    div.skills-group {
+        display: block;
+        margin-right: 0;
+    }
+}
+
 div.skills-group table {
     width: 100%;
 }
