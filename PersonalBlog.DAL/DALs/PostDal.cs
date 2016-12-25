@@ -10,7 +10,7 @@ namespace PersonalBlog.DAL.DALs
 {
     public static class PostDal
     {
-        public static ResultOrProblem<PostDto> Get(long postId)
+        public static ResultOrProblem<PostDto> Get(int postId, bool addViewCount = false)
         {
             using (var blogDb = new BlogDb())
             {
@@ -19,7 +19,9 @@ namespace PersonalBlog.DAL.DALs
                 if (post == null)
                     return new ResultOrProblem<PostDto>(ProblemType.CantFindContent);
 
-	            post.ViewCount++;
+				if (addViewCount)
+					post.ViewCount++;
+
 				blogDb.Update(post);
 
 				return new ResultOrProblem<PostDto>(post);

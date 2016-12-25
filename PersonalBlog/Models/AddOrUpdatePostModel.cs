@@ -31,5 +31,13 @@ namespace PersonalBlog.Models
             
             return result;
         }
+
+	    public void UpdatePostDto(PostDto existentPost)
+	    {
+		    var postProcessResult = PostManager.ProcessSource(Source);
+
+		    existentPost.Source = postProcessResult.CleanedSource;
+		    existentPost.PreviewEndIndex = postProcessResult.PreviewEndIndex;
+	    }
     }
 }

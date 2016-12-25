@@ -6,9 +6,9 @@ namespace PersonalBlog.Controllers
 {
     public class PostController : Controller
     {
-        public ActionResult Index(long postId)
+        public ActionResult Index(int postId)
         {
-            var postResult = PostDal.Get(postId);
+            var postResult = PostDal.Get(postId, true);
 
             if (postResult.ProblemType == ProblemType.NoProblem)
                 return View(postResult.Result);

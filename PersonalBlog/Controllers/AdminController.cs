@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.IO;
+using System.Web.Mvc;
 using PersonalBlog.DAL.DALs;
 using PersonalBlog.DAL.Results;
 using PersonalBlog.Logic.Managers;
@@ -51,9 +52,9 @@ namespace PersonalBlog.Controllers
 
         public ActionResult Delete(int postId)
         {
-            //Get post title from DB too expensive for logging
-            LogManager.LogPost(postId.ToString(), "Post was deleted");
             PostDal.Delete(postId);
+			//Get post title from DB too expensive for logging
+			LogManager.LogPost(postId.ToString(), "Post was deleted");
 
 			return RedirectToAction("Posts", new { pageIndex = 1 });
         }
@@ -63,14 +64,20 @@ namespace PersonalBlog.Controllers
         {
             if (model.PostId == null)
             {
-                LogManager.LogPost(model.Title, "Post was added");
                 PostDal.Insert(model.ToPostDto());
-            }
+				LogManager.LogPost(model.Title, "Post was added");
+			}
             else
             {
-                LogManager.LogPost(model.Title, "Post was updated");
-                PostDal.Update(model.ToPostDto());
-            }
+	            var existentPost = PostDal.Get(model.PostId.Value);
+	            if (existentPost.ProblemType != ProblemType.NoProblem)
+					throw new InvalidDataException("There is no such post in data base to update!");
+
+				model.UpdatePostDto(existentPost.Result);
+
+                PostDal.Update(existentPost.Result);
+				LogManager.LogPost(model.Title, "Post was updated");
+			}
 
             return Content(Url.Action("Posts", new { pageIndex = 1 }));
         }

@@ -17,6 +17,5 @@ namespace PersonalBlog.Controllers
 				PageCount = pageCount
             });
         }
-
     }
 }
