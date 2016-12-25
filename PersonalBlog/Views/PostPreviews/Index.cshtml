@@ -26,7 +26,11 @@
             </div>
             <div class="info">
                 <a class="to-detail" href="@Url.Action("Index", "Post", new {postId = post.PostId})">Подробнее</a>
-                <i class="added-time">(@post.CreationDate.ToShortDateString())</i>
+
+                <div class="right">
+                    <label class="view-count">@post.ViewCount просмотров</label>
+                    <i class="added-time">(@post.CreationDate.ToShortDateString())</i>
+                </div>
             </div>
         </div>
     }

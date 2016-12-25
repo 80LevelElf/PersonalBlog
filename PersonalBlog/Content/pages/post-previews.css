@@ -54,6 +54,17 @@ div.post-wrapper div.info a.to-detail:hover {
     color: white;
 }
 
-div.post-wrapper div.info i.added-time {
+div.post-wrapper div.info div.right {
+    display: inline-block;
+    margin-top: 8px;
     float: right;
+}
+
+div.post-wrapper div.info label.view-count {
+    padding-right: 50px;
+    padding-left: 30px;
+
+    background-position-y: 1px;
+    background-repeat: no-repeat;
+    background-image: url("../images/eye_24.png");
 }

@@ -19,7 +19,10 @@ namespace PersonalBlog.DAL.DALs
                 if (post == null)
                     return new ResultOrProblem<PostDto>(ProblemType.CantFindContent);
 
-                return new ResultOrProblem<PostDto>(post);
+	            post.ViewCount++;
+				blogDb.Update(post);
+
+				return new ResultOrProblem<PostDto>(post);
             }
         }
 

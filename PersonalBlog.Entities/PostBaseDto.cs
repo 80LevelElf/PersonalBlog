@@ -18,5 +18,8 @@ namespace PersonalBlog.Entities
 
 		[Column("UpdationDate")]
 		public DateTime UpdationDate { get; set; }
+
+		[Column("ViewCount")]
+		public int ViewCount { get; set; }
 	}
 }

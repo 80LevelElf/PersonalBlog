@@ -16,10 +16,15 @@
 <div class="post-wrapper">
     <div class="header">
         <label class="title">@Model.Title</label>
-        <i class="added-time">@Model.CreationDate.ToShortDateString()</i>
     </div>
     <div class="source">
         @Model.Source
+    </div>
+    <div class="info">
+        <div class="right">
+            <label class="view-count">@Model.ViewCount просмотров</label>
+            <i class="added-time">(@Model.CreationDate.ToShortDateString())</i>
+        </div>
     </div>
 </div>
 
