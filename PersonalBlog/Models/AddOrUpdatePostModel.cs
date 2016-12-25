@@ -38,6 +38,8 @@ namespace PersonalBlog.Models
 
 		    existentPost.Source = postProcessResult.CleanedSource;
 		    existentPost.PreviewEndIndex = postProcessResult.PreviewEndIndex;
-	    }
+
+			existentPost.UpdationDate = DateTime.Now;
+		}
     }
 }
