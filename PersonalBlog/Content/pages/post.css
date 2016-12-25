@@ -67,3 +67,10 @@ div.post-wrapper div.info label.view-count {
     background-repeat: no-repeat;
     background-image: url("../images/eye_24.png");
 }
+
+/* Smartphones ----------- */
+@media only screen and (max-width: 760px) {
+    div.post-wrapper div.info div.right {
+        float: none;
+    }
+}

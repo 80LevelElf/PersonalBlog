@@ -2,7 +2,7 @@
     display: block;
 
     padding-top: 8px;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     padding-left: 15px;
     margin-bottom: 25px;
     margin-top: 15px;
@@ -67,4 +67,12 @@ div.post-wrapper div.info label.view-count {
     background-position-y: 1px;
     background-repeat: no-repeat;
     background-image: url("../images/eye_24.png");
+}
+
+/* Smartphones ----------- */
+@media only screen and (max-width: 760px) {
+    div.post-wrapper div.info div.right {
+        display: block;
+        float: none;
+    }
 }
