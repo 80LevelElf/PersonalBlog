@@ -11,6 +11,6 @@ div.post-wrapper div.source table {
     min-width: 75%;
 }
 
-div.post-wrapper img {
+div.post-wrapper div.source img {
     max-width: 100%;
 }
