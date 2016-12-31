@@ -10,3 +10,7 @@ div.post-wrapper div.source h1 {
 div.post-wrapper div.source table {
     min-width: 75%;
 }
+
+div.post-wrapper img {
+    max-width: 100%;
+}
