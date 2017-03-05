@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace PersonalBlog.DAL.DalManagers
@@ -7,7 +8,9 @@ namespace PersonalBlog.DAL.DalManagers
 	{
 		public static IEnumerable<T> GetPageResult<T>(this IEnumerable<T> source, int currentPage)
 		{
-			return source.Skip((currentPage - 1) * DefaulSizeManager.PostPageSize).Take(DefaulSizeManager.PostPageSize);
+			return source
+				.Skip((currentPage - 1) * DefaulSizeManager.PostPageSize)
+				.Take(DefaulSizeManager.PostPageSize);
 		}
 
 		public static int GetPageCount(int allResults)

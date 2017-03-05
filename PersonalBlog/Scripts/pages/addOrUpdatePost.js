@@ -16,6 +16,7 @@
         }
 
         var postId = $("#md-editor").attr("data-post-id");
+        var updateCreationDate = $("#update-creation-date").is(':checked');
 
         $.ajax({
             type: "POST",
@@ -24,7 +25,8 @@
             {
                 PostId: postId,
                 Source: source,
-                Title: title
+                Title: title,
+                UpdateCreationDate: updateCreationDate
             }),
             success: function (data) {
                 window.location.href = ActionPathByUrl(data);

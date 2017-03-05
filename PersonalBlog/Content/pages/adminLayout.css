@@ -115,3 +115,9 @@ div.title-wrapper label {
 div.title-wrapper input#title {
     width: 30%;
 }
+
+.update-creation-date {
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
