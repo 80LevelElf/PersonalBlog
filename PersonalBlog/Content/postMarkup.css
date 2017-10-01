@@ -23,3 +23,7 @@ div.post-wrapper div.source blockquote {
 	padding-top: 4px;
 	padding-bottom: 4px;
 }
+
+div.post-wrapper div.source img {
+	max-width: 100%;
+}
