@@ -4,9 +4,22 @@
 }
 
 div.post-wrapper div.source h1 {
-    font-size: 20px;
+    font-size: 26px;
+	background-color: #eee;
+}
+
+div.post-wrapper div.source h2 {
+	font-size: 20px;
 }
 
 div.post-wrapper div.source table {
     min-width: 75%;
+}
+
+div.post-wrapper div.source blockquote {
+	background-color: beige;
+	border-left: 2px solid #aaa;
+	padding-left: 15px;
+	padding-top: 4px;
+	padding-bottom: 4px;
 }
