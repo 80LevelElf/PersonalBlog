@@ -36,7 +36,9 @@ namespace PersonalBlog.DAL.DALs
             using (var blogDb = new BlogDb())
             {
 				pageCount = PageManager.GetPageCount(blogDb.Posts.Count());
-				resultList = blogDb.Posts.OrderByDescending(i => i.CreationDate).GetPageResult(currentPage).ToList();
+				resultList = blogDb.Posts
+					.OrderByDescending(i => i.CreationDate)
+					.GetPageResult(currentPage).ToList();
             }
 
 			return new PageResult<PostDto>(currentPage, pageCount, resultList);

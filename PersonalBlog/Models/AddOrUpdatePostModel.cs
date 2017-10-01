@@ -12,6 +12,8 @@ namespace PersonalBlog.Models
 
         public string Title { get; set; }
 
+		public bool UpdateCreationDate { get; set; }
+
         public PostDto ToPostDto()
         {
             var postProcessResult = PostManager.ProcessSource(Source);
@@ -40,6 +42,8 @@ namespace PersonalBlog.Models
 		    existentPost.PreviewEndIndex = postProcessResult.PreviewEndIndex;
 
 			existentPost.UpdationDate = DateTime.Now;
+			if (UpdateCreationDate)
+				existentPost.CreationDate = DateTime.Now;
 		}
     }
 }
