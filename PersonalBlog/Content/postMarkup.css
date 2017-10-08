@@ -17,9 +17,9 @@ div.post-wrapper div.source table {
 }
 
 div.post-wrapper div.source blockquote {
-	background-color: beige;
 	border-left: 2px solid #aaa;
 	padding-left: 15px;
+	padding-right: 15px;
 	padding-top: 4px;
 	padding-bottom: 4px;
 }
