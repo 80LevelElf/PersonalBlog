@@ -38,7 +38,8 @@ namespace PersonalBlog.Models
 	    {
 		    var postProcessResult = PostManager.ProcessSource(Source);
 
-		    existentPost.Source = postProcessResult.CleanedSource;
+		    existentPost.Title = Title;
+			existentPost.Source = postProcessResult.CleanedSource;
 		    existentPost.PreviewEndIndex = postProcessResult.PreviewEndIndex;
 
 			existentPost.UpdationDate = DateTime.Now;
