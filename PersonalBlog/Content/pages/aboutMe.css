@@ -59,6 +59,10 @@ div.company-logo-div a.work-volgasoft {
     background-image: url(../images/volgasoft-logo.png);
 }
 
+div.company-logo-div a.work-modulbank {
+    background-image: url(../images/Modulbank-logo.jpg);
+}
+
 div.company-work-description {
     display: inline-block;
     vertical-align: top;

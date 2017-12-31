@@ -186,6 +186,7 @@
     <Content Include="Content\images\eye_24.png" />
     <Content Include="Content\images\GitHub-32.png" />
     <Content Include="Content\images\LinkedIn-32.png" />
+    <Content Include="Content\images\Modulbank-logo.jpg" />
     <Content Include="Content\images\move-next-hover.png" />
     <Content Include="Content\images\move-next.png" />
     <Content Include="Content\images\move-prev-hover.png" />
