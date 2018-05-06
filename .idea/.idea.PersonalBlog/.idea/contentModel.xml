@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\PersonalBlog" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="PersonalBlog" t="IncludeRecursive">
+        <e p="App_Code" t="Include">
+          <e p="Disqus.cshtml" t="Include" />
+        </e>
+        <e p="App_Data" t="Include" />
+        <e p="App_Start" t="Include">
+          <e p="BundleConfig.cs" t="Include" />
+          <e p="DataBaseConfig.cs" t="Include" />
+          <e p="FilterConfig.cs" t="Include" />
+          <e p="RouteConfig.cs" t="Include" />
+        </e>
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="Content" t="Include">
+          <e p="Blog.css" t="Include" />
+          <e p="elements" t="Include">
+            <e p="pager.css" t="Include" />
+          </e>
+          <e p="fonts" t="Include">
+            <e p="OpenSans-Regular.ttf" t="Include" />
+          </e>
+          <e p="highlightStyles" t="Include">
+            <e p="agate.css" t="Include" />
+            <e p="androidstudio.css" t="Include" />
+            <e p="ascetic.css" t="Include" />
+            <e p="darcula.css" t="Include" />
+            <e p="github.css" t="Include" />
+            <e p="vs.css" t="Include" />
+          </e>
+          <e p="images" t="Include">
+            <e p="background.jpeg" t="Include" />
+            <e p="bigio-logo.png" t="Include" />
+            <e p="EPAM-logo.png" t="Include" />
+            <e p="eye_24.png" t="Include" />
+            <e p="GitHub-32.png" t="Include" />
+            <e p="LinkedIn-32.png" t="Include" />
+            <e p="Modulbank-logo.jpg" t="Include" />
+            <e p="move-next-hover.png" t="Include" />
+            <e p="move-next.png" t="Include" />
+            <e p="move-prev-hover.png" t="Include" />
+            <e p="move-prev.png" t="Include" />
+            <e p="newochem-logo.png" t="Include" />
+            <e p="progressbar_background.jpg" t="Include" />
+            <e p="Resume-32.png" t="Include" />
+            <e p="roko-logo.png" t="Include" />
+            <e p="taxi-logo.png" t="Include" />
+            <e p="volgasoft-logo.png" t="Include" />
+          </e>
+          <e p="markdown" t="Include">
+            <e p="simplemde.css" t="Include" />
+          </e>
+          <e p="pages" t="Include">
+            <e p="aboutMe.css" t="Include" />
+            <e p="adminLayout.css" t="Include" />
+            <e p="login.css" t="Include" />
+            <e p="myProjects.css" t="Include" />
+            <e p="post-previews.css" t="Include" />
+            <e p="post.css" t="Include" />
+          </e>
+          <e p="postMarkup.css" t="Include" />
+          <e p="Site.css" t="Include" />
+          <e p="themes" t="Include">
+            <e p="base" t="Include">
+              <e p="images" t="Include">
+                <e p="ui-bg_flat_0_aaaaaa_40x100.png" t="Include" />
+                <e p="ui-bg_flat_75_ffffff_40x100.png" t="Include" />
+                <e p="ui-bg_glass_55_fbf9ee_1x400.png" t="Include" />
+                <e p="ui-bg_glass_65_ffffff_1x400.png" t="Include" />
+                <e p="ui-bg_glass_75_dadada_1x400.png" t="Include" />
+                <e p="ui-bg_glass_75_e6e6e6_1x400.png" t="Include" />
+                <e p="ui-bg_glass_95_fef1ec_1x400.png" t="Include" />
+                <e p="ui-bg_highlight-soft_75_cccccc_1x100.png" t="Include" />
+                <e p="ui-icons_222222_256x240.png" t="Include" />
+                <e p="ui-icons_2e83ff_256x240.png" t="Include" />
+                <e p="ui-icons_444444_256x240.png" t="Include" />
+                <e p="ui-icons_454545_256x240.png" t="Include" />
+                <e p="ui-icons_555555_256x240.png" t="Include" />
+                <e p="ui-icons_777620_256x240.png" t="Include" />
+                <e p="ui-icons_777777_256x240.png" t="Include" />
+                <e p="ui-icons_888888_256x240.png" t="Include" />
+                <e p="ui-icons_cc0000_256x240.png" t="Include" />
+                <e p="ui-icons_cd0a0a_256x240.png" t="Include" />
+                <e p="ui-icons_ffffff_256x240.png" t="Include" />
+              </e>
+              <e p="jquery.ui.accordion.css" t="Include" />
+              <e p="jquery.ui.all.css" t="Include" />
+              <e p="jquery.ui.autocomplete.css" t="Include" />
+              <e p="jquery.ui.base.css" t="Include" />
+              <e p="jquery.ui.button.css" t="Include" />
+              <e p="jquery.ui.core.css" t="Include" />
+              <e p="jquery.ui.datepicker.css" t="Include" />
+              <e p="jquery.ui.dialog.css" t="Include" />
+              <e p="jquery.ui.progressbar.css" t="Include" />
+              <e p="jquery.ui.resizable.css" t="Include" />
+              <e p="jquery.ui.selectable.css" t="Include" />
+              <e p="jquery.ui.slider.css" t="Include" />
+              <e p="jquery.ui.tabs.css" t="Include" />
+              <e p="jquery.ui.theme.css" t="Include" />
+              <e p="minified" t="Include">
+                <e p="images" t="Include">
+                  <e p="ui-bg_flat_0_aaaaaa_40x100.png" t="Include" />
+                  <e p="ui-bg_flat_75_ffffff_40x100.png" t="Include" />
+                  <e p="ui-bg_glass_55_fbf9ee_1x400.png" t="Include" />
+                  <e p="ui-bg_glass_65_ffffff_1x400.png" t="Include" />
+                  <e p="ui-bg_glass_75_dadada_1x400.png" t="Include" />
+                  <e p="ui-bg_glass_75_e6e6e6_1x400.png" t="Include" />
+                  <e p="ui-bg_glass_95_fef1ec_1x400.png" t="Include" />
+                  <e p="ui-bg_highlight-soft_75_cccccc_1x100.png" t="Include" />
+                  <e p="ui-icons_222222_256x240.png" t="Include" />
+                  <e p="ui-icons_2e83ff_256x240.png" t="Include" />
+                  <e p="ui-icons_454545_256x240.png" t="Include" />
+                  <e p="ui-icons_888888_256x240.png" t="Include" />
+                  <e p="ui-icons_cd0a0a_256x240.png" t="Include" />
+                </e>
+                <e p="jquery-ui.min.css" t="Include" />
+                <e p="jquery.ui.accordion.min.css" t="Include" />
+                <e p="jquery.ui.autocomplete.min.css" t="Include" />
+                <e p="jquery.ui.button.min.css" t="Include" />
+                <e p="jquery.ui.core.min.css" t="Include" />
+                <e p="jquery.ui.datepicker.min.css" t="Include" />
+                <e p="jquery.ui.dialog.min.css" t="Include" />
+                <e p="jquery.ui.progressbar.min.css" t="Include" />
+                <e p="jquery.ui.resizable.min.css" t="Include" />
+                <e p="jquery.ui.selectable.min.css" t="Include" />
+                <e p="jquery.ui.slider.min.css" t="Include" />
+                <e p="jquery.ui.tabs.min.css" t="Include" />
+                <e p="jquery.ui.theme.min.css" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="AboutMeController.cs" t="Include" />
+          <e p="AccountController.cs" t="Include" />
+          <e p="AdminController.cs" t="Include" />
+          <e p="ElementController.cs" t="Include" />
+          <e p="HomeController.cs" t="Include" />
+          <e p="MyProjectsController.cs" t="Include" />
+          <e p="PostController.cs" t="Include" />
+          <e p="PostPreviewsController.cs" t="Include" />
+        </e>
+        <e p="favicon.ico" t="Include" />
+        <e p="Global.asax" t="Include" />
+        <e p="Global.asax.cs" t="Include" />
+        <e p="Models" t="Include">
+          <e p="AddOrUpdatePostModel.cs" t="Include" />
+          <e p="LoginViewModel.cs" t="Include" />
+          <e p="PagerModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="PersonalBlog.csproj" t="IncludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Blog.pubxml" t="Include" />
+            <e p="FileSystem.pubxml" t="Include" />
+            <e p="FolderProfile.pubxml" t="Include" />
+            <e p="Ruzik.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="_references.js" t="Include" />
+          <e p="highlight.js" t="Include" />
+          <e p="jquery-1.8.2.intellisense.js" t="Include" />
+          <e p="jquery-1.8.2.js" t="Include" />
+          <e p="jquery-1.8.2.min.js" t="Include" />
+          <e p="jquery-ui-1.8.24.js" t="Include" />
+          <e p="jquery-ui-1.8.24.min.js" t="Include" />
+          <e p="jquery.unobtrusive-ajax.js" t="Include" />
+          <e p="jquery.unobtrusive-ajax.min.js" t="Include" />
+          <e p="jquery.validate-vsdoc.js" t="Include" />
+          <e p="jquery.validate.js" t="Include" />
+          <e p="jquery.validate.min.js" t="Include" />
+          <e p="jquery.validate.unobtrusive.js" t="Include" />
+          <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+          <e p="knockout-2.2.0.debug.js" t="Include" />
+          <e p="knockout-2.2.0.js" t="Include" />
+          <e p="markdown" t="Include">
+            <e p="markdown.js" t="Include" />
+            <e p="md-editor.js" t="Include" />
+            <e p="simplemde.js" t="Include" />
+          </e>
+          <e p="modernizr-2.6.2.js" t="Include" />
+          <e p="pages" t="Include">
+            <e p="addOrUpdatePost.js" t="Include" />
+            <e p="post.js" t="Include" />
+            <e p="postPreview.js" t="Include" />
+          </e>
+          <e p="postManager.js" t="Include" />
+          <e p="utils.js" t="Include" />
+        </e>
+        <e p="Views" t="Include">
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="AboutMe" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Account" t="Include">
+            <e p="Login.cshtml" t="Include" />
+          </e>
+          <e p="Admin" t="Include">
+            <e p="AddOrUpdatePost.cshtml" t="Include" />
+            <e p="Logs.cshtml" t="Include" />
+            <e p="Posts.cshtml" t="Include" />
+          </e>
+          <e p="Element" t="Include">
+            <e p="Pager.cshtml" t="Include" />
+          </e>
+          <e p="Home" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="MyProjects" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Post" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="PostPreviews" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_AdminLayout.cshtml" t="Include" />
+            <e p="_BlogLayout.cshtml" t="Include" />
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="Error.cshtml" t="Include" />
+          </e>
+          <e p="Web.config" t="Include" />
+        </e>
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+      </e>
+      <e p="PersonalBlog.DAL" t="IncludeRecursive">
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="BlogDb.cs" t="Include" />
+        <e p="DalManagers" t="Include">
+          <e p="DefaulSizeManager.cs" t="Include" />
+          <e p="PageManager.cs" t="Include" />
+        </e>
+        <e p="DALs" t="Include">
+          <e p="LogEntryDal.cs" t="Include" />
+          <e p="PostBaseDal.cs" t="Include" />
+          <e p="PostDal.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="PersonalBlog.DAL.csproj" t="IncludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Results" t="Include">
+          <e p="PageResult.cs" t="Include" />
+          <e p="ProblemType.cs" t="Include" />
+          <e p="ResultOrProblem.cs" t="Include" />
+        </e>
+      </e>
+      <e p="PersonalBlog.Entities" t="IncludeRecursive">
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="Enums" t="Include">
+          <e p="LogType.cs" t="Include" />
+        </e>
+        <e p="LogEntryDto.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="PersonalBlog.Entities.csproj" t="IncludeRecursive" />
+        <e p="PostBaseDto.cs" t="Include" />
+        <e p="PostDto.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="PersonalBlog.Logic" t="IncludeRecursive">
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="Managers" t="Include">
+          <e p="ConstsManager.cs" t="Include" />
+          <e p="LogManager.cs" t="Include" />
+          <e p="PostManager.cs" t="Include" />
+          <e p="Results" t="Include">
+            <e p="PostPreviewCalculationResult.cs" t="Include" />
+          </e>
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="PersonalBlog.Logic.csproj" t="IncludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="PersonalBlog.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\User\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_PersonalBlog.-782130927.00" t="ExcludeRecursive" />
+  </component>
+</project>

@@ -6,14 +6,26 @@
 div.post-wrapper div.source h1 {
     font-size: 26px;
 	background-color: #eee;
+	margin-top: 81px;
 }
 
 div.post-wrapper div.source h2 {
 	font-size: 20px;
+	margin-top: 72px;
+}
+
+div.post-wrapper div.source h3 {
+	font-size: 18px;
+	margin-top: 60px;
 }
 
 div.post-wrapper div.source table {
     min-width: 75%;
+}
+
+div.post-wrapper div.source ul li{
+	margin-top: 7px;
+	margin-bottom: 7px;
 }
 
 div.post-wrapper div.source blockquote {

@@ -201,8 +201,8 @@ div.content-div {
     margin-top: 14px;
     display: block;
 
-    padding-left: calc(5vw - 10px); /*to remove spaces on smartphones*/
-    padding-right: calc(5vw - 10px); /*to remove spaces on smartphones*/
+    padding-left: calc(9vw - 10px); /*to remove spaces on smartphones*/
+    padding-right: calc(9vw - 10px); /*to remove spaces on smartphones*/
     padding-top: 6px;
     padding-bottom: 30px;
 }
